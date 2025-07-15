@@ -1,5 +1,5 @@
 import React from "react";
-import { useLanguageStore } from '../store/useLanguageStore';
+import { useLanguageStore } from "../store/useLanguageStore";
 
 const Summary: React.FC = () => {
   const isFrench = useLanguageStore((state) => state.isFrench);
@@ -14,11 +14,13 @@ const Summary: React.FC = () => {
       </h3>
       <div className="summary-resume text-base text-gray-700">
         {isFrench
-          ? "Curieux et persévérant, je suis à la recherche d’un nouveau défi."
-          : "Curious and persevering, I'm looking for a new challenge."}
+          ? "Fort de tout ce que j'ai appris dans la logistique, je cherche à me" +
+            "ré-orienter vers le secteur à impact positif pour mettre mon éventail de compétences," +
+            "ma passion et mon engagement au service du bien commun et de la société."
+          : ""}
       </div>
     </div>
   );
 };
 
-export default Summary; 
+export default Summary;

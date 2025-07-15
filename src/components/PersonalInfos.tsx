@@ -1,44 +1,59 @@
 import React from "react";
-import { useLanguageStore } from '../store/useLanguageStore';
+import { useLanguageStore } from "../store/useLanguageStore";
+import { useCensoredStore } from "../store/useCensoredStore";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faCalendar,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
+
+interface PersonalInfosItemProps {
+  icon: IconDefinition;
+  text: string;
+}
 
 const PersonalInfos: React.FC = () => {
   const isFrench = useLanguageStore((state) => state.isFrench);
-  const isCensored = true; // Peut être ajouté au store si besoin
+  const isCensored = useCensoredStore((state) => state.isCensored);
 
   return (
     <div>
-      <div className="info-section flex items-center mb-2">
-        <i className="info-icon mr-2 text-blue-600 fa-solid fa-envelope" />
-        <div className="text-infos email">Theophile.decagny@gmail.com</div>
-      </div>
+      <PersonalInfosItem icon={faEnvelope} text="Theophile.decagny@gmail.com" />
 
       {!isCensored && (
-        <div className="info-section flex items-center mb-2">
-          <i className="info-icon mr-2 text-blue-600 fa-solid fa-calendar" />
-          <div className="text-infos date">
-            {isFrench ? "20 / 07 / 1994" : "07 / 20 / 1994"}
-          </div>
-        </div>
+        <PersonalInfosItem
+          icon={faCalendar}
+          text={isFrench ? "20 / 07 / 1994" : "07 / 20 / 1994"}
+        />
       )}
 
-      <div className="info-section flex items-center mb-2">
-        <i className="info-icon mr-2 text-blue-600 fa-solid fa-location-dot" />
-        <div className="text-infos location">Paris, France</div>
-      </div>
+      <PersonalInfosItem icon={faLocationDot} text="Paris, France" />
 
-      <div className="info-section flex items-center mb-2">
-        <i className="info-icon mr-2 text-blue-600 fa-brands fa-linkedin" />
-        <div className="text-infos linkedin">
-          linkedin.com/in/theophile-de-cagny
-        </div>
-      </div>
+      <PersonalInfosItem
+        icon={faLinkedin}
+        text="linkedin.com/in/theophile-de-cagny"
+      />
 
-      <div className="info-section flex items-center mb-2">
-        <i className="info-icon mr-2 text-blue-600 fa-brands fa-github" />
-        <div className="text-infos github">github.com/octavator</div>
-      </div>
+      <PersonalInfosItem icon={faGithub} text="github.com/octavator" />
     </div>
   );
 };
 
-export default PersonalInfos; 
+const PersonalInfosItem: React.FC<PersonalInfosItemProps> = ({
+  icon,
+  text,
+}) => {
+  return (
+    <div className="info-section flex items-center mb-2">
+      <div className="info-icon mr-2">
+        <FontAwesomeIcon icon={icon} className="text-blue-600" />
+      </div>
+      <div className="text-infos">{text}</div>
+    </div>
+  );
+};
+
+export default PersonalInfos;

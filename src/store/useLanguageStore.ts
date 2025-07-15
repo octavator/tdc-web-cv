@@ -1,4 +1,4 @@
-import { create } from 'zustand';
+import { create } from "zustand";
 
 type LanguageState = {
   isFrench: boolean;
@@ -8,4 +8,4 @@ type LanguageState = {
 export const useLanguageStore = create<LanguageState>((set) => ({
   isFrench: false,
   toggleLanguage: () => set((state) => ({ isFrench: !state.isFrench })),
-})); 
+}));

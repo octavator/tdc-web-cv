@@ -21,8 +21,8 @@ const ModeSwitcher: React.FC = () => {
         className="px-4 py-2 rounded bg-green-600 text-white hover:bg-green-700 transition"
       >
         {isCensored
-          ? "Afficher infos personnelles"
-          : "Masquer infos personnelles"}
+          ? "Déflouter infos personnelles"
+          : "Flouter infos personnelles"}
       </button>
     </div>
   );

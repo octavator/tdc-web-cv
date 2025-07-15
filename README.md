@@ -5,9 +5,9 @@ Welcome ! This CV is a fully operational website hosted on *TODO*.
 Its main functionalities:
 
 - A CV, no surprise there. You can use your browser's print function to export it to PDF.
-  - When printing to PDF, the different dynamic elements are hidden (button to switch language etc.) *TODO*
+- When printing to PDF, the different dynamic elements are hidden (button to switch language etc.) *TODO*
 - Change the language (EN / FR)
-- Switch to *No Discrimination* mode : hides picture, name, location, birthdate etc. *TODO*
+- Switch to *No Discrimination* mode : blurs every information that could let one determine my identity (picture, name, github, linkedin, email etc.)
 - Switch between targeted job offers: Architect, Developer *TODO*
 - Switch between sectors to adapt the content and layout: Normal, Positive Impact *TODO*
 

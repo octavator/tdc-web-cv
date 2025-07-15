@@ -9,7 +9,7 @@ const ModeSwitcher: React.FC = () => {
   const toggleCensored = useCensoredStore((state) => state.toggleCensored);
 
   return (
-    <div className="mb-4 space-x-2">
+    <div className="mb-4 space-x-2 no-print">
       <button
         onClick={toggleLanguage}
         className="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition"

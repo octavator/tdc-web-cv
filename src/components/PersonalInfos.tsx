@@ -6,6 +6,7 @@ import {
   faEnvelope,
   faCalendar,
   faLocationDot,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
@@ -34,6 +35,8 @@ const PersonalInfos: React.FC = () => {
       />
 
       <PersonalInfosItem icon={faLocationDot} text="Paris, France" />
+
+      <PersonalInfosItem icon={faPhone} text="+33 6 70 70 36 72" />
 
       <PersonalInfosItem
         icon={faLinkedin}

@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Print styles - hide interactive elements when printing */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  /* Force Chrome to print backgrounds */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* Ensure proper page breaks */
+  .xp-block,
+  .education-block {
+    page-break-inside: avoid;
+  }
+
+  /* Remove margins and padding that waste space */
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Optimize text for print */
+  .text-gray-600,
+  .text-gray-700 {
+    color: #374151 !important;
+  }
+}
+
 /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

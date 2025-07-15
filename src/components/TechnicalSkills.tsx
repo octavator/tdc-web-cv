@@ -1,5 +1,5 @@
 import React from "react";
-import { useLanguageStore } from '../store/useLanguageStore';
+import { useLanguageStore } from "../store/useLanguageStore";
 
 const skills = [
   {
@@ -20,7 +20,7 @@ const skills = [
   {
     titleFr: "Python",
     titleEn: "Python",
-    mastery: 100,
+    mastery: 70,
   },
   {
     titleFr: "DevOps",
@@ -54,4 +54,4 @@ const TechnicalSkills: React.FC = () => {
   );
 };
 
-export default TechnicalSkills; 
+export default TechnicalSkills;

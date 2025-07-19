@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquare } from "@fortawesome/free-solid-svg-icons";
 
 interface WorkExperienceTaskProps {
   task: string;
@@ -8,12 +6,11 @@ interface WorkExperienceTaskProps {
 
 const WorkExperienceTask: React.FC<WorkExperienceTaskProps> = ({ task }) => {
   return (
-    <div className="xp-item flex items-start mt-1">
-      <FontAwesomeIcon
-        icon={faSquare}
-        className="start-list-icon text-cv-secondary mr-2 text-xs mt-0.5"
-      />
-      <span>{task}</span>
+    <div className="xp-item flex items-start py-1">
+      <div className="w-2 h-2 bg-cv-accent rounded-full mt-2 mr-4 flex-shrink-0"></div>
+      <span className="text-cv-dark-grey leading-relaxed font-medium">
+        {task}
+      </span>
     </div>
   );
 };

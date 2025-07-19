@@ -6,16 +6,17 @@ const ProfilePicture: React.FC = () => {
   const isCensored = useCensoredStore((state) => state.isCensored);
 
   return (
-    // @TODO: check image properties are alright for every screen size
-    <div className="profile-picture mb-4">
-      <img
-        src={profileImg}
-        alt="Profil"
-        className={`rounded-lg w-44 h-44 object-cover ${
-          isCensored ? "blur-md select-none" : ""
-        }`}
-        style={{ width: "180px", height: "180px" }}
-      />
+    <div className="profile-picture mb-6 flex justify-center">
+      <div className="relative">
+        <img
+          src={profileImg}
+          alt="Profil"
+          className={`rounded-xl w-48 h-48 object-cover shadow-lg border-4 border-white ring-4 ring-cv-primary/20 ${
+            isCensored ? "blur-md select-none" : ""
+          }`}
+        />
+        <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-cv-primary/10 to-transparent"></div>
+      </div>
     </div>
   );
 };

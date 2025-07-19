@@ -4,11 +4,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "cv-primary": "#cc6666",
-        "cv-secondary": "hsl(201.05deg 94.14% 24.09%)",
-        "cv-light-grey": "rgba(75, 74, 74, 0.9)",
-        "cv-tertiary": "#a180df",
-        "cv-lilac": "#C8A2C8",
+        "cv-primary": "#2563eb",
+        "cv-secondary": "#1e40af",
+        "cv-accent": "#059669",
+        "cv-light-grey": "#64748b",
+        "cv-dark-grey": "#334155",
+        "cv-text-primary": "#0f172a",
+        "cv-background-light": "#f8fafc",
+      },
+      fontFamily: {
+        sans: [
+          "Inter",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif",
+        ],
       },
     },
   },

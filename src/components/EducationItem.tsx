@@ -17,14 +17,14 @@ const EducationItem: React.FC<EducationItemProps> = ({
   const isFrench = useLanguageStore((state) => state.isFrench);
 
   return (
-    <div className="xp-block education-block mb-3">
-      <div className="xp-establishment text-base font-bold text-cv-secondary mb-1 flex items-center">
-        <span className="xp-client-name">
+    <div className="xp-block education-block bg-white rounded-lg p-5 shadow-sm border border-gray-100 mb-4 border-l-4 border-l-cv-accent">
+      <div className="xp-establishment flex items-start justify-between">
+        <div className="xp-client-name text-lg font-semibold text-cv-secondary">
           {isFrench && frenchName ? frenchName : name}
-        </span>
-        <div className="xp-extra-infos ml-3 text-cv-light-grey text-xs flex justify-between flex-1">
-          <div className="xp-timerange">{timeRange}</div>
-          {location && <div className="xp-location">{location}</div>}
+        </div>
+        <div className="xp-extra-infos text-cv-light-grey text-sm font-medium flex flex-col items-end">
+          <div className="xp-timerange mb-1">{timeRange}</div>
+          {location && <div className="xp-location text-xs">{location}</div>}
         </div>
       </div>
     </div>

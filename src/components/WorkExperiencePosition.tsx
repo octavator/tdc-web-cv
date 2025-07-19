@@ -19,14 +19,14 @@ const WorkExperiencePosition: React.FC<WorkExperiencePositionProps> = ({
   const tasks = isFrench ? position.tasks.french : position.tasks.english;
 
   return (
-    <div>
-      <div className="xp-title flex items-end text-sm font-bold text-cv-primary mb-1 mt-1">
-        {title}
-        <div className="xp-extra-infos ml-3 text-cv-light-grey text-xs flex justify-between flex-1">
+    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+      <div className="xp-title flex items-start justify-between mb-3">
+        <div className="text-lg font-semibold text-cv-secondary">{title}</div>
+        <div className="xp-extra-infos text-cv-light-grey text-sm font-medium">
           <div className="xp-timerange">{timeRange}</div>
         </div>
       </div>
-      <div className="xp-list mr-8 mb-2">
+      <div className="xp-list space-y-2">
         {tasks.map((task, index) => (
           <WorkExperienceTask key={index} task={task} />
         ))}

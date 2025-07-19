@@ -28,105 +28,102 @@ export const workExperienceData: WorkExperienceData[] = [
     location: "Paris",
     description: {
       french:
-        "Editeur SaaS basé sur le cloud spécialisé en système de gestion de commandes et d'entrepôts. 150 employés",
+        "Éditeur SaaS spécialisé en systèmes de gestion de commandes et d'entrepôts critiques. Clients CAC40: Michelin, BUT, Conforama, Carrefour",
       english:
-        "Cloud-based SaaS start-up dealing with order and warehouse management systems. 150 employees",
+        "SaaS editor specialized in critical order and warehouse management systems. CAC40 clients: Michelin, BUT, Conforama, Carrefour",
     },
     positions: [
       {
-        title: { french: "Tech Lead", english: "Tech Lead" },
+        title: {
+          french: "Sr. Engineering Project Manager",
+          english: "Sr. Engineering Project Manager",
+        },
         timeRange: {
-          french: "Mai 2025 - Aujourd'hui",
-          english: "May 2025 - Today",
+          french: "Juil 2024 - Aujourd'hui",
+          english: "Jul 2024 - Today",
         },
         tasks: {
           french: [
-            "Tech Lead pour l'équipe Business du département Product - Apporter expertise technique & métier à la construction de fonctionnalités transversales sur notre plateforme SaaS destinées aux entreprises du CAC40 pour configurer, gérer et opérer leurs systèmes de gestion.",
+            "Élaboration et validation de décisions architecturales affectant l'entreprise",
+            "Conception, cadrage et chiffrage de nouvelles applications critiques",
+            "Garant des exigences non fonctionnelles: Michelin Europe, BUT & Conforama WMS, Carrefour Espagne",
+            "Stratégies de migration avec emphase sur mitigation des risques",
           ],
           english: [
-            "Leading the product team responsible for the features allowing our CAC40 clients to configure, manage, and operate their OMS & WMS through KBRW's platform",
+            "Development and validation of architectural decisions affecting the company",
+            "Design, scoping and estimation of critical new applications",
+            "Guardian of non-functional requirements: Michelin Europe, BUT & Conforama WMS, Carrefour Spain",
+            "Migration strategies with emphasis on risk mitigation",
           ],
         },
       },
       {
         title: {
-          french: "Architecte Solutions",
-          english: "Solutions Architect",
+          french: "Lead Solution Engineer & Manager",
+          english: "Lead Solution Engineer & Manager",
         },
         timeRange: {
-          french: "Mar 2024 - Aujourd'hui",
-          english: "Mar 2024 - Today",
+          french: "Déc 2022 - Aujourd'hui",
+          english: "Dec 2022 - Today",
         },
         tasks: {
           french: [
-            "Architecte Full-stack de la plateforme de prise de commande de Michelin à destination de toute l'Europe",
-            "Architecte Full-stack responsable du WMS pour BUT & Conforama",
+            "Lead Dev Order Capture System Michelin: équipe de 12 développeurs pour la plateforme Europe",
+            "Architecture & décommissionnement Legacy, nouveau flux EDI européen, agrégation fournisseurs",
+            "Plan de Reprise d'Activité (DRP) applications critiques, astreinte multi-clients",
+            "Recrutement, mentorat, amélioration qualité releases et bonnes pratiques",
           ],
           english: [
-            "Full-stack Architect of Michelin's order capture & order management system for Europe",
-            "Full-stack Architect in charge of BUT's & Conforama's WMS",
+            "Lead Dev Order Capture System Michelin: 12-developer team for Europe platform",
+            "Architecture & Legacy decommissioning, new European EDI flow, supplier aggregation",
+            "Disaster Recovery Plan (DRP) for critical applications, multi-client on-call",
+            "Recruitment, mentoring, release quality improvement and best practices",
           ],
         },
       },
       {
         title: {
-          french: "Lead Ingénieur Solutions",
-          english: "Lead Solution Engineer",
+          french: "Ingénieur Logiciel Sr. & Manager",
+          english: "Sr. Software Engineer & Manager",
         },
         timeRange: {
-          french: "Oct 2022 - Mar 2024",
-          english: "Oct 2022 - Mar 2024",
+          french: "Déc 2021 - Déc 2022",
+          english: "Dec 2021 - Dec 2022",
         },
         tasks: {
           french: [
-            "Tech Lead in charge of 8 developers working on Michelin's new order management system for Europe",
-            "Implémentation d'un flux business plus performant et hautement paramétrable pour la prise de commande et la gestion de commandes Michelin en Europe",
-            "Remplacement de l'ancien système de prise de commande Europe pour Michelin avec une emphase sur la mitigation des risques",
+            "Features essentielles Order Capture Michelin: administration offres, éligibilité, recherche produit",
+            "Projet agrégation stocks distributeurs partenaires, intégration sites existants",
+            "Cadrage, chiffrage, conception, management équipe développement",
+            "Astreinte applications critiques multi-clients (Michelin, PSA, Ba&sh, Cora, Brico-Dépôt)",
           ],
           english: [
-            "Main Lead of a team of 16 developers and a dozen business analysts working on Michelin's new order management system for Europe",
-            "Implemented an optimized and highly configurable business process for Michelin's order capture & management in Europe",
-            "Replaced Michelin's 30 years old legacy order capture for Europe with an emphasis on mitigating risks",
+            "Essential Order Capture Michelin features: offer administration, eligibility, product search",
+            "Partner distributor stock aggregation project, integration with existing sites",
+            "Scoping, estimation, design, development team management",
+            "Critical multi-client applications on-call (Michelin, PSA, Ba&sh, Cora, Brico-Dépôt)",
           ],
         },
       },
       {
         title: {
-          french: "Sr. Développeur Full-stack",
-          english: "Sr. Full-stack Software Engineer",
+          french: "Ingénieur Développeur",
+          english: "Software Engineer",
         },
         timeRange: {
-          french: "Sep 2021 - Oct 2022",
-          english: "Sep 2021 - Oct 2022",
+          french: "Oct 2020 - Déc 2021",
+          english: "Oct 2020 - Dec 2021",
         },
         tasks: {
           french: [
-            "EBM",
-            "Implémentation d'un Design System en ReactJS from scratch pour Michelin",
+            "Évolutions site Michelin prise de commande Europe & Thaïlande, remplacement plateforme Bibserve",
+            "Maintenance OMS & WMS Jardiland en solo, développement dropshipping complet",
+            "Développement intranet/extranet BAPIF avec problématiques UX pour bénévoles",
           ],
           english: [
-            "Designed & implemented Michelin's new aggregated service connected to dozens of partner wholesalers",
-            "Implemented a Design System in ReactJS from scratch for Michelin",
-          ],
-        },
-      },
-      {
-        title: {
-          french: "Jr. Développeur full-stack",
-          english: "Jr. Full-stack Software Engineer",
-        },
-        timeRange: {
-          french: "Oct 2020 - Sep 2021",
-          english: "Oct 2020 - Sep 2021",
-        },
-        tasks: {
-          french: [
-            "Implémentation du nouveau front-office & back-office de la BAPIF pour leurs collectes bi-annuelles",
-            "Implémentation du drop-shipping dans la gestion des stocks & des commandes pour Jardiland. Gestion autonome du run en production en parallèle",
-          ],
-          english: [
-            "Implemented the new front-office & back-office of the BAPIF for their bi-annual collections",
-            "Implemented drop-shipping as part of stock & order management for Jardiland (OMS & WMS). Autonomous run in production in parallel",
+            "Michelin Europe & Thailand order capture site evolution, Bibserve platform replacement",
+            "Solo Jardiland OMS & WMS maintenance, complete dropshipping development",
+            "BAPIF intranet/extranet development with UX challenges for volunteers",
           ],
         },
       },
@@ -135,25 +132,31 @@ export const workExperienceData: WorkExperienceData[] = [
   {
     companyName: "Suricats Consulting",
     timeRange: {
-      french: "Sep 2019 - Mar 2020",
-      english: "Sep 2019 - Mar 2020",
+      french: "Mar 2020 - Sep 2020",
+      english: "Mar 2020 - Sep 2020",
     },
     location: "Paris",
     description: {
-      french: "Cabinet de conseil en transformation digitale. 40 employés",
-      english: "Digital transformation consulting firm. 40 employees",
+      french:
+        "Cabinet de conseil en transformation digitale. Mécénat de compétences avec Solidarités International",
+      english:
+        "Digital transformation consulting firm. Skills-based volunteering with Solidarités International",
     },
     singlePosition: {
       title: {
-        french: "Développeur full-stack junior",
-        english: "Jr. Full-stack Software Engineer",
+        french: "Consultant Junior",
+        english: "Junior Consultant",
       },
       tasks: {
         french: [
-          "Prestation autonome sur le site d'information participatif de Solidarités International sur la gestion des eaux noires",
+          "Améliorations UI/UX e-commerce DoubleSens & Giftsforchange (PrestaShop, WordPress)",
+          "Mécénat Solidarités International: audit UX, étude trafic, roadmap améliorations Octopus.solidarites.org",
+          "Développement projet interne: mobile, IoT, IA et APIs",
         ],
         english: [
-          "Autonomous mission to improve Solidarités International's participative information website on human waste management in zones suffering from humanitarian crisis",
+          "UI/UX improvements for DoubleSens & Giftsforchange e-commerce (PrestaShop, WordPress)",
+          "Solidarités International volunteering: UX audit, traffic study, Octopus.solidarites.org roadmap",
+          "Internal project development: mobile, IoT, AI and APIs",
         ],
       },
     },
@@ -161,50 +164,61 @@ export const workExperienceData: WorkExperienceData[] = [
   {
     companyName: "Creads",
     timeRange: {
-      french: "Sep 2017 - Sep 2018",
-      english: "Sep 2017 - Sep 2018",
+      french: "Avr 2018 - Sep 2018",
+      english: "Apr 2018 - Sep 2018",
     },
     location: "Paris",
     description: {
       french:
-        "Plateforme de mise en relation entre créatifs freelances et clients. 40 employés",
+        "Plateforme de mise en relation créatifs freelances et clients. Équipe technique agile 7 développeurs",
       english:
-        "Digital matching platform for freelancing designers and businesses. 40 employees",
+        "Digital matching platform for freelance creatives and clients. Agile technical team of 7 developers",
     },
     singlePosition: {
       title: {
-        french: "Développeur full-stack junior",
-        english: "Jr. Full-stack Software Engineer",
+        french: "Développeur Web",
+        english: "Web Developer",
       },
       tasks: {
         french: [
-          "Membre de l'équipe technique agile responsable de la plateforme SaaS",
+          "Fonctionnalités majeures: page portfolio créatifs, espace échange client-designer",
+          "Maintenance continue solution SaaS, équipe technique agile 7 développeurs",
         ],
-        english: ["Member of the agile team in charge of the SaaS platform"],
+        english: [
+          "Major features: creative portfolio page, client-designer exchange space",
+          "Continuous SaaS solution maintenance, agile technical team of 7 developers",
+        ],
       },
     },
   },
   {
-    companyName: { french: "Projet personnel", english: "Personal project" },
+    companyName: "Creads",
     timeRange: {
-      french: "Fev 2021 - Mar 2022",
-      english: "Feb 2021 - Mar 2022",
+      french: "Juil 2016 - Déc 2016",
+      english: "Jul 2016 - Dec 2016",
     },
     location: "Paris",
     description: {
       french:
-        "Plateforme de mise en relation, réservation & visio-conférence pour tout type de coaching",
+        "Première expérience développement web. Intégration équipe technique 6 développeurs, méthodologie Scrum",
       english:
-        "Digital platform to help coaches with appointment management, payment and video-conference.",
+        "First web development experience. Integration into 6-developer technical team, Scrum methodology",
     },
     singlePosition: {
-      title: { french: "", english: "" }, // No title for personal project
+      title: {
+        french: "Développeur Web",
+        english: "Web Developer",
+      },
       tasks: {
         french: [
-          "Conception & implémentation de la plateforme & de son infrastructure (ReactJS / Elixir sur AWS via Docker)",
+          "Correction anomalies fonctionnelles et visuelles plateforme Creads.fr",
+          "Ré-implémentation routes plateforme pour améliorer efficacité équipe",
+          "Apprentissage méthodologie Agile Scrum",
         ],
         english: [
-          "Designed & implemented the whole platform & its infrastructure (ReactJS / Elixir on AWS through Docker)",
+          "Functional and visual bug fixes on Creads.fr platform",
+          "Platform routes re-implementation to improve team efficiency",
+          "Agile Scrum methodology learning",
         ],
       },
     },

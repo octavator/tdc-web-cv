@@ -11,8 +11,11 @@ import CoursesTraining from "./components/CoursesTraining";
 
 function App() {
   return (
-    <div className="App">
-      <ModeSwitcher />
+    <div className="App min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="fixed top-4 right-4 z-10">
+        <ModeSwitcher />
+      </div>
+
       <div className="container">
         <div className="flex-column">
           <ProfilePicture />

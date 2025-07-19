@@ -9,20 +9,18 @@ const ModeSwitcher: React.FC = () => {
   const toggleCensored = useCensoredStore((state) => state.toggleCensored);
 
   return (
-    <div className="mb-4 space-x-2 no-print">
+    <div className="flex flex-col gap-2 no-print">
       <button
         onClick={toggleLanguage}
-        className="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition"
+        className="px-3 py-1.5 text-xs rounded-md bg-white/90 text-cv-primary border border-cv-primary/20 hover:bg-cv-primary/5 transition-all duration-200 shadow-sm backdrop-blur-sm font-medium"
       >
-        {isFrench ? "Passer en anglais" : "Switch to French"}
+        {isFrench ? "EN" : "FR"}
       </button>
       <button
         onClick={toggleCensored}
-        className="px-4 py-2 rounded bg-green-600 text-white hover:bg-green-700 transition"
+        className="px-3 py-1.5 text-xs rounded-md bg-white/90 text-cv-accent border border-cv-accent/20 hover:bg-cv-accent/5 transition-all duration-200 shadow-sm backdrop-blur-sm font-medium"
       >
-        {isCensored
-          ? "Déflouter infos personnelles"
-          : "Flouter infos personnelles"}
+        {isCensored ? "👁️" : "🔒"}
       </button>
     </div>
   );

@@ -2,48 +2,121 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CSS Custom Properties for Original Color Scheme */
+/* CSS Custom Properties for Executive Color Scheme */
 :root {
-  --primary-color: #cc6666;
-  --secondary-color: hsl(201.05deg 94.14% 24.09%);
-  --light-grey: rgba(75, 74, 74, 0.9);
-  --tertiary-color: #a180df;
-  --lilac-color: #c8a2c8;
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --accent-color: #059669;
+  --light-grey: #64748b;
+  --dark-grey: #334155;
+  --text-primary: #0f172a;
+  --background-light: #f8fafc;
 }
 
 /* Base Styles */
 html {
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    sans-serif;
   height: 100%;
+  line-height: 1.6;
 }
 
 body {
   height: 100%;
   margin: 0;
+  background-color: var(--background-light);
+  color: var(--text-primary);
+  font-weight: 400;
 }
 
-/* Layout Classes using Tailwind utilities */
+/* Typography Enhancements */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+/* Executive Layout Classes */
 .container {
-  @apply flex m-2 mb-0;
+  @apply flex gap-8 p-6 max-w-7xl mx-auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin: 2rem auto;
 }
 
 .flex-column {
-  @apply flex flex-col items-center;
+  @apply flex flex-col;
 }
 
 .flex-column:first-of-type {
-  @apply mr-4;
+  @apply w-80;
+  min-width: 320px;
 }
 
 .main-column {
-  @apply flex-grow;
+  @apply flex-1;
+  min-width: 0;
 }
 
-/* Print styles - hide interactive elements when printing */
+/* Enhanced Section Styling */
+.section-divider {
+  @apply border-b-2 border-cv-primary pb-1 mb-6;
+}
+
+.executive-card {
+  @apply bg-white rounded-lg p-6 shadow-sm border border-gray-100;
+}
+
+/* Professional spacing and visual enhancements */
+.info-section {
+  @apply mb-4 text-sm;
+}
+
+.technical-section {
+  @apply mb-5;
+}
+
+.xp-block {
+  @apply mb-8 p-4 rounded-lg;
+  border-left: 4px solid var(--primary-color);
+  background: rgba(37, 99, 235, 0.02);
+}
+
+.interest-element {
+  @apply mb-4 text-base;
+}
+
+/* Print styles - optimized for executive presentation */
 @media print {
   .no-print {
     display: none !important;
+  }
+
+  .container {
+    @apply shadow-none m-0 p-4;
+    background: white;
   }
 
   /* Force Chrome to print backgrounds */
@@ -56,12 +129,14 @@ body {
   .xp-block,
   .education-block {
     page-break-inside: avoid;
+    border-left: 3px solid var(--primary-color) !important;
   }
 
   /* Remove margins and padding that waste space */
   body {
     margin: 0 !important;
     padding: 0 !important;
+    background: white !important;
   }
 
   /* Optimize text for print */
@@ -70,9 +145,12 @@ body {
     color: #374151 !important;
   }
 
-  @media print {
-    .technical-mastery {
-      border: 1px solid var(--secondary-color) !important;
-    }
+  .technical-mastery {
+    border: 1px solid var(--secondary-color) !important;
+  }
+
+  /* Executive print layout */
+  .flex-column:first-of-type {
+    width: 280px !important;
   }
 }

@@ -13,8 +13,9 @@ const Education: React.FC = () => {
 
       <div className="space-y-2">
         <EducationItem
-          name="EPITECH - Master of Engineering, Computer Science"
-          frenchName="EPITECH - Master of Engineering, Informatique"
+          establishment="EPITECH"
+          name="Master in Computer Science"
+          frenchName="Master en Informatique"
           timeRange="2015 - 2020"
           location="Paris"
         />

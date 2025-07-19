@@ -95,7 +95,7 @@ h3 {
 
 .flex-column:first-of-type {
   @apply w-80;
-  min-width: 320px;
+  min-width: 220px;
 }
 
 .main-column {
@@ -171,45 +171,69 @@ h3 {
 @media print {
   /* Hide browser default headers and footers */
   @page {
-    margin: 0.5in;
+    margin: 0.4in;
     size: A4;
-  }
-
-  /* Hide default browser print elements */
-  body {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
   }
 
   .no-print {
     display: none !important;
   }
 
+  /* Force Chrome to print backgrounds and optimize rendering */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    -webkit-font-smoothing: auto !important;
+    -moz-osx-font-smoothing: auto !important;
+  }
+
   .container {
     @apply shadow-none m-0 p-4;
     background: white;
     border-radius: 0;
-    gap: 1.5rem;
+    gap: 1.4rem;
   }
 
   .container::before {
     display: none;
   }
 
-  /* Force Chrome to print backgrounds */
-  * {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
-
   /* Ensure proper page breaks */
   .xp-block,
-  .education-block {
+  .education-block,
+  .w-full.bg-white {
     page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .xp-block {
     border-left: 3px solid var(--primary-color) !important;
   }
 
-  /* Remove margins and padding that waste space */
+  /* Prevent orphaned sections */
+  .section-title {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Keep work experience positions together */
+  .bg-gray-50 {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Profile and summary should stay together */
+  .profile-picture {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  .summary {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Clean body for print */
   body {
     margin: 0 !important;
     padding: 0 !important;
@@ -222,13 +246,64 @@ h3 {
     color: #374151 !important;
   }
 
-  .technical-mastery {
-    border: 1px solid var(--secondary-color) !important;
-  }
-
   /* Executive print layout */
   .flex-column:first-of-type {
-    width: 260px !important;
+    width: 220px !important;
+  }
+
+
+  /* Profile picture optimizations */
+  .profile-picture .absolute,
+  .profile-picture .bg-gradient-to-r,
+  .profile-picture .bg-gradient-to-br {
+    display: none !important;
+  }
+
+  .profile-picture img {
+    box-shadow: none !important;
+    border: 2px solid var(--primary-color) !important;
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+  /* Summary section optimizations */
+  .summary {
+    box-shadow: none !important;
+    border: 2px solid var(--primary-color) !important;
+  }
+
+
+  /* Remove all shadows and optimize elements */
+  .shadow-lg,
+  .shadow-md,
+  .shadow-sm,
+  .shadow-xl,
+  .shadow-2xl,
+  .bg-white,
+  .technical-mastery {
+    box-shadow: none !important;
+  }
+
+  .bg-white {
+    border: 1px solid #e5e7eb !important;
+  }
+
+  .technical-mastery {
+    border: 1px solid var(--primary-color) !important;
+  }
+
+  /* Remove animations, transitions and hover effects for PDF */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+    transform: none !important;
+  }
+
+  /* Ensure gradient backgrounds print properly */
+  .bg-gradient-to-r {
+    background: var(--primary-color) !important;
   }
 
   /* Optimize vertical spacing for print */

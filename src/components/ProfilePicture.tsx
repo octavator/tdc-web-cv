@@ -18,7 +18,6 @@ const ProfilePicture: React.FC = () => {
             }`}
           />
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-transparent via-transparent to-cv-primary/20"></div>
-          <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-cv-accent rounded-full border-3 border-white shadow-lg"></div>
         </div>
       </div>
     </div>

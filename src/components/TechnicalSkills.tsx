@@ -33,7 +33,7 @@ const TechnicalSkills: React.FC = () => {
   const isFrench = useLanguageStore((state) => state.isFrench);
 
   const getMasteryWidth = (mastery: number) => {
-    const emptyWidth = (100 - mastery) * 2.4; // 240px total width, so 2.4px per percent
+    const emptyWidth = (100 - mastery) * 2.2; // 240px total width, so 2.4px per percent
     return `${emptyWidth}px`;
   };
 
@@ -54,7 +54,7 @@ const TechnicalSkills: React.FC = () => {
           </div>
           <div
             className="technical-mastery border border-cv-primary/20 h-3 flex flex-row-reverse bg-gradient-to-r from-cv-primary to-cv-secondary rounded-full overflow-hidden shadow-md group-hover:shadow-lg transition-all duration-300"
-            style={{ width: "240px" }}
+            style={{ width: "220px" }}
           >
             <div
               className="bg-gradient-to-r from-gray-100 to-gray-200 h-full transition-all duration-500 ease-out"

@@ -68,14 +68,16 @@ export const workExperienceData: WorkExperienceData[] = [
         },
         tasks: {
           french: [
-            "Lead technique équipe 12 dev: plateforme e-commerce Michelin Europe (millions €/an)",
-            "Décommissionnement legacy, nouveau flux EDI européen",
-            "DRP applications critiques, recrutement & mentorat équipe",
+            "Lead technique équipe 15 dev: plateforme e-commerce Michelin Europe (millions €/an)",
+            "Architecture & décommissionnement Legacy, nouveau flux EDI européen",
+            "Plan de Reprise d'Activité (DRP) de 20~ applications critiques",
+            "Recrutement, mentorat, amélioration qualité releases et bonnes pratiques",
           ],
           english: [
-            "Technical lead 12-dev team: Michelin Europe e-commerce platform (millions €/year)",
-            "Decommissioning legacy architecture, new European EDI flow",
-            "Critical apps DRP, team recruitment & mentoring",
+            "Technical lead 15-dev team: Michelin Europe e-commerce platform (millions €/year)", //@TODO: checker combien de millions en CA passent sur EUROPE seulement (S2S + UI)
+            "Architecture & Legacy decommissioning, new European EDI flow",
+            "Disaster Recovery Plan (DRP) for 20~ critical applications",
+            "Recruitment, mentoring, release quality improvement and best practices",
           ],
         },
       },
@@ -90,14 +92,16 @@ export const workExperienceData: WorkExperienceData[] = [
         },
         tasks: {
           french: [
-            "Features Order Capture Michelin: offres, éligibilité, recherche produit",
-            "Agrégation stocks distributeurs, management équipe développement",
-            "Astreinte applications critiques multi-clients",
+            "Features essentielles Order Capture Michelin: administration offres, éligibilité, recherche produit",
+            "Projet agrégation stocks distributeurs partenaires (10+ millions de valeur)",
+            "Cadrage, chiffrage, conception & management de l'équipe développement",
+            "Astreinte applications critiques multi-clients (Michelin, Stellantis, Ba&sh..)",
           ],
           english: [
-            "Order Capture Michelin features: offers, eligibility, product search",
-            "Distributor stock aggregation, development team management",
-            "Critical multi-client applications on-call",
+            "Essential Order Capture Michelin features: offer administration, eligibility, product search",
+            "Partner distributor stock aggregation project (10+ millions in value)",
+            "Scoping, estimation, design & management of development team",
+            "Critical multi-client applications on-call (Michelin, Stellantis, Ba&sh..)",
           ],
         },
       },
@@ -112,12 +116,14 @@ export const workExperienceData: WorkExperienceData[] = [
         },
         tasks: {
           french: [
-            "Évolutions site Michelin Europe & Thaïlande, remplacement Bibserve",
-            "Maintenance OMS & WMS Jardiland, développement dropshipping",
+            "Évolutions site Michelin prise de commande Europe & Thaïlande & nouveau site pour CSR",
+            "Maintenance OMS & WMS Jardiland en solo, développement dropshipping complet",
+            "Développement intranet/extranet Banque Alimentaire Paris & Ile-de-France ",
           ],
           english: [
-            "Michelin Europe & Thailand site evolution, Bibserve replacement",
-            "Jardiland OMS & WMS maintenance, dropshipping development",
+            "Michelin Europe & Thailand order capture evolution + brand new platform for CSR",
+            "Solo Jardiland OMS & WMS maintenance, complete dropshipping development",
+            "Banque Alimentaire Paris & Ile-de-France intranet/extranet development",
           ],
         },
       },
@@ -143,12 +149,14 @@ export const workExperienceData: WorkExperienceData[] = [
       },
       tasks: {
         french: [
-          "Architecture & développement plateforme coachs-clients",
-          "Intégrations: Stripe, Twilio, AWS - Stack: ReactJS, Elixir, Docker",
+          "Architecture & développement complet plateforme de mise en relation coachs-clients",
+          "Intégrations critiques: Stripe, Twilio (visio-conférence), AWS",
+          "Stack technique: ReactJS, Elixir, Docker",
         ],
         english: [
-          "Platform architecture & development for coach-client matching",
-          "Integrations: Stripe, Twilio, AWS - Stack: ReactJS, Elixir, Docker",
+          "Full platform architecture and development for coach-client matching",
+          "Critical integrations: Stripe, Twilio (video conferencing), AWS",
+          "Tech stack: ReactJS, Elixir, Docker",
         ],
       },
     },

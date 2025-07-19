@@ -186,7 +186,7 @@ h3 {
   }
 
   .container {
-    @apply shadow-none m-0 p-2;
+    @apply shadow-none m-0 p-4;
     background: white;
     border-radius: 0;
     gap: 1.5rem;
@@ -233,45 +233,45 @@ h3 {
 
   /* Optimize vertical spacing for print */
   .my-6 {
-    margin-top: 0.5rem !important;
-    margin-bottom: 0.5rem !important;
+    margin-top: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
   }
 
   .my-4 {
-    margin-top: 0.5rem !important;
-    margin-bottom: 0.5rem !important;
+    margin-top: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
   }
 
   .mb-8 {
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 1rem !important;
   }
 
   .mb-6 {
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
   }
 
   .mb-4 {
-    margin-bottom: 0.25rem !important;
+    margin-bottom: 0.5rem !important;
   }
 
   .mb-3 {
-    margin-bottom: 0.25rem !important;
+    margin-bottom: 0.5rem !important;
   }
 
   .space-y-6 > * + * {
-    margin-top: 0.5rem !important;
+    margin-top: 0.75rem !important;
   }
 
   .space-y-4 > * + * {
-    margin-top: 0.5rem !important;
+    margin-top: 0.75rem !important;
   }
 
   .space-y-3 > * + * {
-    margin-top: 0.25rem !important;
+    margin-top: 0.5rem !important;
   }
 
   .space-y-2 > * + * {
-    margin-top: 0.25rem !important;
+    margin-top: 0.5rem !important;
   }
 
   .p-6 {
@@ -294,29 +294,29 @@ h3 {
     padding-bottom: 0.25rem !important;
   }
 
-  /* Reduce text sizes for print */
+  /* Optimize text sizes for print readability */
   .text-lg {
-    font-size: 0.875rem !important;
+    font-size: 1rem !important;
   }
 
   .text-base {
-    font-size: 0.75rem !important;
+    font-size: 0.875rem !important;
   }
 
   .text-sm {
-    font-size: 0.6875rem !important;
+    font-size: 0.75rem !important;
   }
 
   .text-xs {
-    font-size: 0.625rem !important;
+    font-size: 0.6875rem !important;
   }
 
   .text-3xl {
-    font-size: 1.5rem !important;
+    font-size: 1.75rem !important;
   }
 
   .text-4xl {
-    font-size: 1.75rem !important;
+    font-size: 2rem !important;
   }
 
   /* Optimize container spacing */

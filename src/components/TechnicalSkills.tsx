@@ -5,7 +5,7 @@ const skills = [
   {
     titleFr: "Architecture Logicielle",
     titleEn: "Software Architecture",
-    mastery: 85,
+    mastery: 90,
   },
   {
     titleFr: "Elixir & Systèmes Critiques",

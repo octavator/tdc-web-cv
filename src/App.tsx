@@ -21,12 +21,12 @@ function App() {
           <ProfilePicture />
           <PersonalInfos />
           <TechnicalSkills />
+          <CoursesTraining />
           <Interests />
         </div>
         <div className="flex-column main-column">
           <Summary />
           <WorkExperience />
-          <CoursesTraining />
           <Education />
         </div>
       </div>

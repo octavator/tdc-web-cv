@@ -130,6 +130,40 @@ export const workExperienceData: WorkExperienceData[] = [
     ],
   },
   {
+    companyName: "CoachLab",
+    timeRange: {
+      french: "Juil 2021 - Déc 2022",
+      english: "Jul 2021 - Dec 2022",
+    },
+    location: "Paris",
+    description: {
+      french:
+        "Développement end-to-end d'une plateforme SaaS de mise en relation pour coachs. MVP complet avec visio-conférence, gestion d'agenda et paiements",
+      english:
+        "End-to-end development of a SaaS coaching platform. Complete MVP with video conferencing, scheduling and payment processing",
+    },
+    singlePosition: {
+      title: {
+        french: "Co-fondateur & CTO",
+        english: "Co-founder & CTO",
+      },
+      tasks: {
+        french: [
+          "Architecture et développement complet plateforme de mise en relation coachs-clients",
+          "Intégrations critiques: Stripe (paiements), Twilio (visio-conférence), AWS (infrastructure)",
+          "Stack technique: ReactJS frontend, Elixir backend, PostgreSQL, Docker",
+          "Préparation go-to-market avec investissement BPI France (10k€)",
+        ],
+        english: [
+          "Full platform architecture and development for coach-client matching",
+          "Critical integrations: Stripe (payments), Twilio (video conferencing), AWS (infrastructure)",
+          "Tech stack: ReactJS frontend, Elixir backend, PostgreSQL, Docker",
+          "Go-to-market preparation with BPI France investment (€10k)",
+        ],
+      },
+    },
+  },
+  {
     companyName: "Suricats Consulting",
     timeRange: {
       french: "Mar 2020 - Sep 2020",

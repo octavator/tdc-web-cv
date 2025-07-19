@@ -18,13 +18,6 @@ const Education: React.FC = () => {
           timeRange="2015 - 2020"
           location="Paris"
         />
-
-        <EducationItem
-          name="Cambridge Certificate of Proficiency in English (C2)"
-          frenchName="Cambridge Certificate of Proficiency in English (C2)"
-          timeRange="2011"
-          location="Cambridge, UK"
-        />
       </div>
     </div>
   );

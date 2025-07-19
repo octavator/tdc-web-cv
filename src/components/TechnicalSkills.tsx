@@ -10,22 +10,22 @@ const skills = [
   {
     titleFr: "Elixir & Systèmes Critiques",
     titleEn: "Elixir & Critical Systems",
-    mastery: 90,
+    mastery: 95,
   },
   {
     titleFr: "ReactJS & Full-stack",
     titleEn: "ReactJS & Full-stack",
-    mastery: 80,
+    mastery: 90,
   },
   {
     titleFr: "Leadership d'Équipe",
     titleEn: "Team Leadership",
-    mastery: 75,
+    mastery: 90,
   },
   {
     titleFr: "DevOps & Infrastructure",
     titleEn: "DevOps & Infrastructure",
-    mastery: 70,
+    mastery: 85,
   },
 ];
 

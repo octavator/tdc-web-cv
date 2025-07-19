@@ -169,6 +169,18 @@ h3 {
 
 /* Print styles - optimized for executive presentation */
 @media print {
+  /* Hide browser default headers and footers */
+  @page {
+    margin: 0.5in;
+    size: A4;
+  }
+
+  /* Hide default browser print elements */
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
   .no-print {
     display: none !important;
   }
@@ -221,40 +233,57 @@ h3 {
 
   /* Optimize vertical spacing for print */
   .my-6 {
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
-  }
-
-  .mb-8 {
-    margin-bottom: 1rem !important;
-  }
-
-  .mb-6 {
-    margin-bottom: 0.75rem !important;
-  }
-
-  .mb-4 {
+    margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
   }
 
+  .my-4 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .mb-8 {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .mb-6 {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .mb-4 {
+    margin-bottom: 0.25rem !important;
+  }
+
+  .mb-3 {
+    margin-bottom: 0.25rem !important;
+  }
+
   .space-y-6 > * + * {
-    margin-top: 1rem !important;
+    margin-top: 0.5rem !important;
   }
 
   .space-y-4 > * + * {
-    margin-top: 0.75rem !important;
+    margin-top: 0.5rem !important;
+  }
+
+  .space-y-3 > * + * {
+    margin-top: 0.25rem !important;
+  }
+
+  .space-y-2 > * + * {
+    margin-top: 0.25rem !important;
   }
 
   .p-6 {
-    padding: 0.75rem !important;
-  }
-
-  .p-4 {
     padding: 0.5rem !important;
   }
 
+  .p-4 {
+    padding: 0.25rem !important;
+  }
+
   .p-5 {
-    padding: 0.75rem !important;
+    padding: 0.25rem !important;
   }
 
   .pb-3 {
@@ -293,7 +322,14 @@ h3 {
   /* Optimize container spacing */
   .container {
     font-size: 0.75rem !important;
-    line-height: 1.4 !important;
+    line-height: 1.2 !important;
+    gap: 1rem !important;
+  }
+
+  /* Make summary more compact */
+  .summary {
+    padding: 0.75rem !important;
+    margin-bottom: 0.5rem !important;
   }
 }
 

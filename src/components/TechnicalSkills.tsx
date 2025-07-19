@@ -43,7 +43,7 @@ const TechnicalSkills: React.FC = () => {
         {isFrench ? "Expertises Techniques" : "Technical Expertise"}
       </div>
       {skills.map((skill, idx) => (
-        <div className="technical-section flex flex-col mb-5 group" key={idx}>
+        <div className="technical-section flex flex-col mb-3 group" key={idx}>
           <div className="flex items-center justify-between mb-2">
             <div className="technical-title font-semibold text-cv-dark-grey text-base">
               {isFrench ? skill.titleFr : skill.titleEn}

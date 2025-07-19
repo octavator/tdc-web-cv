@@ -28,32 +28,32 @@ export const workExperienceData: WorkExperienceData[] = [
     location: "Paris",
     description: {
       french:
-        "Éditeur SaaS spécialisé en systèmes de gestion de commandes et d'entrepôts critiques. Clients CAC40: Michelin, BUT, Conforama, Carrefour",
+        "SaaS éditeur - systèmes critiques CAC40: Michelin, BUT, Conforama, Carrefour",
       english:
-        "SaaS editor specialized in critical order and warehouse management systems. CAC40 clients: Michelin, BUT, Conforama, Carrefour",
+        "SaaS editor - critical systems for CAC40: Michelin, BUT, Conforama, Carrefour",
     },
     positions: [
       {
         title: {
-          french: "Sr. Engineering Project Manager",
-          english: "Sr. Engineering Project Manager",
+          french: "Solutions Architect - Tech Leader",
+          english: "Solutions Architect - Tech Leader",
         },
         timeRange: {
-          french: "Juil 2024 - Aujourd'hui",
-          english: "Jul 2024 - Today",
+          french: "Avr 2024 - Aujourd'hui",
+          english: "Apr 2024 - Today",
         },
         tasks: {
           french: [
-            "Élaboration et validation de décisions architecturales affectant l'entreprise",
-            "Conception, cadrage et chiffrage de nouvelles applications critiques",
-            "Garant des exigences non fonctionnelles: Michelin Europe, BUT & Conforama WMS, Carrefour Espagne",
-            "Stratégies de migration avec emphase sur mitigation des risques",
+            "Architecture NFR (scalabilité, fiabilité, sécurité) pour dizaines d'apps critiques CAC40",
+            "Conception & migration sécurisée plateforme export maritime Michelin (~1Md€ revenue)",
+            "Collaboration Dev/Ops/Security pour transformation digitale Michelin",
+            "Optimisation performance & coûts environnement haute disponibilité industriel",
           ],
           english: [
-            "Development and validation of architectural decisions affecting the company",
-            "Design, scoping and estimation of critical new applications",
-            "Guardian of non-functional requirements: Michelin Europe, BUT & Conforama WMS, Carrefour Spain",
-            "Migration strategies with emphasis on risk mitigation",
+            "NFR architecture (scalability, reliability, security) for dozens of critical CAC40 apps",
+            "Design & safe migration of Michelin overseas export platform (~€1B revenue)",
+            "Cross-functional Dev/Ops/Security collaboration for Michelin digital transformation",
+            "Performance & cost optimization in high-availability industrial environment",
           ],
         },
       },
@@ -63,21 +63,19 @@ export const workExperienceData: WorkExperienceData[] = [
           english: "Lead Solution Engineer & Manager",
         },
         timeRange: {
-          french: "Déc 2022 - Aujourd'hui",
-          english: "Dec 2022 - Today",
+          french: "Déc 2022 - Avr 2024",
+          english: "Dec 2022 - Apr 2024",
         },
         tasks: {
           french: [
-            "Lead Dev Order Capture System Michelin: équipe de 12 développeurs pour la plateforme Europe",
-            "Architecture & décommissionnement Legacy, nouveau flux EDI européen, agrégation fournisseurs",
-            "Plan de Reprise d'Activité (DRP) applications critiques, astreinte multi-clients",
-            "Recrutement, mentorat, amélioration qualité releases et bonnes pratiques",
+            "Lead technique équipe 12 dev: plateforme e-commerce Michelin Europe (millions €/an)",
+            "Décommissionnement legacy, nouveau flux EDI européen",
+            "DRP applications critiques, recrutement & mentorat équipe",
           ],
           english: [
-            "Lead Dev Order Capture System Michelin: 12-developer team for Europe platform",
-            "Architecture & Legacy decommissioning, new European EDI flow, supplier aggregation",
-            "Disaster Recovery Plan (DRP) for critical applications, multi-client on-call",
-            "Recruitment, mentoring, release quality improvement and best practices",
+            "Technical lead 12-dev team: Michelin Europe e-commerce platform (millions €/year)",
+            "Decommissioning legacy architecture, new European EDI flow",
+            "Critical apps DRP, team recruitment & mentoring",
           ],
         },
       },
@@ -92,16 +90,14 @@ export const workExperienceData: WorkExperienceData[] = [
         },
         tasks: {
           french: [
-            "Features essentielles Order Capture Michelin: administration offres, éligibilité, recherche produit",
-            "Projet agrégation stocks distributeurs partenaires, intégration sites existants",
-            "Cadrage, chiffrage, conception, management équipe développement",
-            "Astreinte applications critiques multi-clients (Michelin, PSA, Ba&sh, Cora, Brico-Dépôt)",
+            "Features Order Capture Michelin: offres, éligibilité, recherche produit",
+            "Agrégation stocks distributeurs, management équipe développement",
+            "Astreinte applications critiques multi-clients",
           ],
           english: [
-            "Essential Order Capture Michelin features: offer administration, eligibility, product search",
-            "Partner distributor stock aggregation project, integration with existing sites",
-            "Scoping, estimation, design, development team management",
-            "Critical multi-client applications on-call (Michelin, PSA, Ba&sh, Cora, Brico-Dépôt)",
+            "Order Capture Michelin features: offers, eligibility, product search",
+            "Distributor stock aggregation, development team management",
+            "Critical multi-client applications on-call",
           ],
         },
       },
@@ -116,14 +112,12 @@ export const workExperienceData: WorkExperienceData[] = [
         },
         tasks: {
           french: [
-            "Évolutions site Michelin prise de commande Europe & Thaïlande, remplacement plateforme Bibserve",
-            "Maintenance OMS & WMS Jardiland en solo, développement dropshipping complet",
-            "Développement intranet/extranet BAPIF avec problématiques UX pour bénévoles",
+            "Évolutions site Michelin Europe & Thaïlande, remplacement Bibserve",
+            "Maintenance OMS & WMS Jardiland, développement dropshipping",
           ],
           english: [
-            "Michelin Europe & Thailand order capture site evolution, Bibserve platform replacement",
-            "Solo Jardiland OMS & WMS maintenance, complete dropshipping development",
-            "BAPIF intranet/extranet development with UX challenges for volunteers",
+            "Michelin Europe & Thailand site evolution, Bibserve replacement",
+            "Jardiland OMS & WMS maintenance, dropshipping development",
           ],
         },
       },
@@ -138,9 +132,9 @@ export const workExperienceData: WorkExperienceData[] = [
     location: "Paris",
     description: {
       french:
-        "Développement end-to-end d'une plateforme SaaS de mise en relation pour coachs. MVP complet avec visio-conférence, gestion d'agenda et paiements",
+        "Plateforme SaaS coaching: visio, agenda, paiements. MVP complet",
       english:
-        "End-to-end development of a SaaS coaching platform. Complete MVP with video conferencing, scheduling and payment processing",
+        "SaaS coaching platform: video, scheduling, payments. Complete MVP",
     },
     singlePosition: {
       title: {
@@ -149,14 +143,12 @@ export const workExperienceData: WorkExperienceData[] = [
       },
       tasks: {
         french: [
-          "Architecture et développement complet plateforme de mise en relation coachs-clients",
-          "Intégrations critiques: Stripe, Twilio, AWS (infra)",
-          "Stack technique: ReactJS, Elixir, Docker",
+          "Architecture & développement plateforme coachs-clients",
+          "Intégrations: Stripe, Twilio, AWS - Stack: ReactJS, Elixir, Docker",
         ],
         english: [
-          "Full platform architecture and development for coach-client matching",
-          "Critical integrations: Stripe, Twilio, AWS (infra)",
-          "Tech stack: ReactJS, Elixir, Docker",
+          "Platform architecture & development for coach-client matching",
+          "Integrations: Stripe, Twilio, AWS - Stack: ReactJS, Elixir, Docker",
         ],
       },
     },
@@ -170,9 +162,9 @@ export const workExperienceData: WorkExperienceData[] = [
     location: "Paris",
     description: {
       french:
-        "Cabinet de conseil en transformation digitale. Mécénat de compétences avec Solidarités International",
+        "Conseil transformation digitale & mécénat Solidarités International",
       english:
-        "Digital transformation consulting firm. Skills-based volunteering with Solidarités International",
+        "Digital transformation consulting & Solidarités International volunteering",
     },
     singlePosition: {
       title: {
@@ -181,14 +173,12 @@ export const workExperienceData: WorkExperienceData[] = [
       },
       tasks: {
         french: [
-          "Améliorations UI/UX e-commerce DoubleSens & Giftsforchange (PrestaShop, WordPress)",
-          "Mécénat Solidarités International: audit UX, roadmap améliorations techniques sur Octopus.solidarites.org",
-          "Développement projet interne: mobile, IoT, IA et APIs",
+          "Améliorations UI/UX e-commerce (PrestaShop, WordPress)",
+          "Audit UX Solidarités International, développement mobile/IoT/IA",
         ],
         english: [
-          "UI/UX improvements for DoubleSens & Giftsforchange e-commerce (PrestaShop, WordPress)",
-          "Solidarités International volunteering: UX audit, traffic study, Octopus.solidarites.org roadmap",
-          "Internal project development: mobile, IoT, AI and APIs",
+          "E-commerce UI/UX improvements (PrestaShop, WordPress)",
+          "Solidarités International UX audit, mobile/IoT/AI development",
         ],
       },
     },
@@ -202,9 +192,9 @@ export const workExperienceData: WorkExperienceData[] = [
     location: "Paris",
     description: {
       french:
-        "Plateforme créative B2B de mise en relation freelances et clients. Formation développement web en équipe agile",
+        "Plateforme B2B freelances-clients. Formation développement web agile",
       english:
-        "Creative B2B platform connecting freelancers and clients. Web development training in agile team",
+        "B2B freelancer-client platform. Agile web development training",
     },
     singlePosition: {
       title: {
@@ -213,14 +203,12 @@ export const workExperienceData: WorkExperienceData[] = [
       },
       tasks: {
         french: [
-          "Développement fonctionnalités core: portfolio créatifs, système messaging client-designer",
-          "Refactoring architecture plateforme, ré-implémentation routing pour améliorer efficacité équipe",
-          "Formation méthodologie Agile Scrum, bonnes pratiques développement web",
+          "Développement portfolios créatifs, messaging client-designer",
+          "Refactoring architecture, formation Agile Scrum",
         ],
         english: [
-          "Core feature development: creative portfolios, client-designer messaging system",
-          "Platform architecture refactoring, routing re-implementation to improve team efficiency",
-          "Agile Scrum methodology training, web development best practices",
+          "Creative portfolios development, client-designer messaging",
+          "Architecture refactoring, Agile Scrum training",
         ],
       },
     },

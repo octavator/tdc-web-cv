@@ -5,12 +5,12 @@ import WorkExperienceItem from "./WorkExperienceItem";
 
 const WorkExperience: React.FC = () => {
   return (
-    <div className="my-6 w-full">
-      <div className="section-title text-lg font-semibold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-3 mb-8">
+    <div className="my-4 w-full">
+      <div className="section-title text-base font-semibold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-2 mb-4">
         Experience
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-4">
         {workExperienceData.map((experience, index) => (
           <WorkExperienceItem key={index} data={experience} />
         ))}

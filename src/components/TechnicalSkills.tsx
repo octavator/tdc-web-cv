@@ -38,13 +38,13 @@ const TechnicalSkills: React.FC = () => {
   };
 
   return (
-    <div className="w-full bg-white rounded-lg p-6 shadow-sm border border-gray-100 mb-6">
-      <div className="section-title text-lg font-bold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-3 mb-8 tracking-wide">
+    <div className="w-full bg-white rounded-lg p-4 shadow-sm border border-gray-100 mb-4">
+      <div className="section-title text-base font-bold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-2 mb-4 tracking-wide">
         {isFrench ? "Expertises Techniques" : "Technical Expertise"}
       </div>
       {skills.map((skill, idx) => (
-        <div className="technical-section flex flex-col mb-8 group" key={idx}>
-          <div className="flex items-center justify-between mb-3">
+        <div className="technical-section flex flex-col mb-5 group" key={idx}>
+          <div className="flex items-center justify-between mb-2">
             <div className="technical-title font-semibold text-cv-dark-grey text-base">
               {isFrench ? skill.titleFr : skill.titleEn}
             </div>
@@ -53,7 +53,7 @@ const TechnicalSkills: React.FC = () => {
             </div>
           </div>
           <div
-            className="technical-mastery border border-cv-primary/20 h-4 flex flex-row-reverse bg-gradient-to-r from-cv-primary to-cv-secondary rounded-full overflow-hidden shadow-md group-hover:shadow-lg transition-all duration-300"
+            className="technical-mastery border border-cv-primary/20 h-3 flex flex-row-reverse bg-gradient-to-r from-cv-primary to-cv-secondary rounded-full overflow-hidden shadow-md group-hover:shadow-lg transition-all duration-300"
             style={{ width: "240px" }}
           >
             <div

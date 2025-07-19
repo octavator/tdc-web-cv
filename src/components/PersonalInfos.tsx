@@ -20,8 +20,8 @@ const PersonalInfos: React.FC = () => {
   const isFrench = useLanguageStore((state) => state.isFrench);
 
   return (
-    <div className="w-full bg-white rounded-lg p-6 shadow-sm border border-gray-100 mb-6">
-      <div className="section-title text-lg font-semibold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-3 mb-6">
+    <div className="w-full bg-white rounded-lg p-4 shadow-sm border border-gray-100 mb-4">
+      <div className="section-title text-base font-semibold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-2 mb-4">
         {isFrench ? "Contact" : "Contact"}
       </div>
       <PersonalInfosItem
@@ -64,7 +64,7 @@ const PersonalInfosItem: React.FC<PersonalInfosItemProps> = ({
   const isCensored = useCensoredStore((state) => state.isCensored);
 
   return (
-    <div className="info-section flex items-start mb-4 text-sm text-cv-dark-grey w-full">
+    <div className="info-section flex items-start mb-3 text-xs text-cv-dark-grey w-full">
       <FontAwesomeIcon
         icon={icon}
         className="info-icon text-cv-primary mr-3 mt-0.5 flex-shrink-0"

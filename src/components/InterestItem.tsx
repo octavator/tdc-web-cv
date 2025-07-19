@@ -17,7 +17,7 @@ const InterestItem: React.FC<InterestItemProps> = ({
   const isFrench = useLanguageStore((state) => state.isFrench);
 
   return (
-    <div className="interest-element text-base mb-5 flex items-center">
+    <div className="interest-element text-sm mb-3 flex items-center">
       <div className="interest-icon mr-4">
         <FontAwesomeIcon icon={icon} className="text-cv-accent text-lg" />
       </div>

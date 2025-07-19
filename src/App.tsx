@@ -22,12 +22,12 @@ function App() {
           <PersonalInfos />
           <TechnicalSkills />
           <CoursesTraining />
+          <Education />
           <Interests />
         </div>
         <div className="flex-column main-column">
           <Summary />
           <WorkExperience />
-          <Education />
         </div>
       </div>
     </div>

@@ -174,9 +174,10 @@ h3 {
   }
 
   .container {
-    @apply shadow-none m-0 p-4;
+    @apply shadow-none m-0 p-2;
     background: white;
     border-radius: 0;
+    gap: 1.5rem;
   }
 
   .container::before {
@@ -215,7 +216,84 @@ h3 {
 
   /* Executive print layout */
   .flex-column:first-of-type {
-    width: 280px !important;
+    width: 260px !important;
+  }
+
+  /* Optimize vertical spacing for print */
+  .my-6 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .mb-8 {
+    margin-bottom: 1rem !important;
+  }
+
+  .mb-6 {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .mb-4 {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .space-y-6 > * + * {
+    margin-top: 1rem !important;
+  }
+
+  .space-y-4 > * + * {
+    margin-top: 0.75rem !important;
+  }
+
+  .p-6 {
+    padding: 0.75rem !important;
+  }
+
+  .p-4 {
+    padding: 0.5rem !important;
+  }
+
+  .p-5 {
+    padding: 0.75rem !important;
+  }
+
+  .pb-3 {
+    padding-bottom: 0.5rem !important;
+  }
+
+  .pb-2 {
+    padding-bottom: 0.25rem !important;
+  }
+
+  /* Reduce text sizes for print */
+  .text-lg {
+    font-size: 0.875rem !important;
+  }
+
+  .text-base {
+    font-size: 0.75rem !important;
+  }
+
+  .text-sm {
+    font-size: 0.6875rem !important;
+  }
+
+  .text-xs {
+    font-size: 0.625rem !important;
+  }
+
+  .text-3xl {
+    font-size: 1.5rem !important;
+  }
+
+  .text-4xl {
+    font-size: 1.75rem !important;
+  }
+
+  /* Optimize container spacing */
+  .container {
+    font-size: 0.75rem !important;
+    line-height: 1.4 !important;
   }
 }
 

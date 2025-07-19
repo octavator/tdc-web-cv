@@ -24,34 +24,34 @@ const WorkExperienceItem: React.FC<WorkExperienceItemProps> = ({ data }) => {
     : data.description.english;
 
   return (
-    <div className="xp-block bg-white rounded-xl p-6 shadow-sm border border-gray-100 mb-6 border-l-4 border-l-cv-primary">
-      <div className="xp-establishment text-xl font-bold text-cv-primary mb-2 flex items-start justify-between">
+    <div className="xp-block bg-white rounded-xl p-4 shadow-sm border border-gray-100 mb-4 border-l-4 border-l-cv-primary">
+      <div className="xp-establishment text-lg font-bold text-cv-primary mb-1.5 flex items-start justify-between">
         <span className="xp-client-name">{companyName}</span>
         <div className="xp-extra-infos text-cv-light-grey text-sm font-medium flex flex-col items-end">
           <div className="xp-timerange mb-1">{timeRange}</div>
           <div className="xp-location text-xs">{data.location}</div>
         </div>
       </div>
-      <div className="xp-establishment-resume text-sm font-medium italic text-cv-light-grey mb-4 leading-relaxed">
+      <div className="xp-establishment-resume text-xs font-medium italic text-cv-light-grey mb-3 leading-relaxed">
         {description}
       </div>
 
       {data.positions ? (
-        <div className="xp-list space-y-4">
+        <div className="xp-list space-y-3">
           {data.positions.map((position, index) => (
             <WorkExperiencePosition key={index} position={position} />
           ))}
         </div>
       ) : data.singlePosition ? (
-        <div className="bg-gray-50 rounded-lg p-4">
+        <div className="bg-gray-50 rounded-lg p-3">
           {data.singlePosition.title.french && (
-            <div className="xp-title text-lg font-semibold text-cv-secondary mb-3">
+            <div className="xp-title text-base font-semibold text-cv-secondary mb-2">
               {isFrench
                 ? data.singlePosition.title.french
                 : data.singlePosition.title.english}
             </div>
           )}
-          <div className="xp-list space-y-2">
+          <div className="xp-list space-y-1.5">
             {(isFrench
               ? data.singlePosition.tasks.french
               : data.singlePosition.tasks.english

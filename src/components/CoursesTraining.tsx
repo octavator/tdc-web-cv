@@ -34,11 +34,11 @@ const CoursesTraining: React.FC = () => {
   ];
 
   return (
-    <div className="w-full bg-white rounded-lg p-6 shadow-sm border border-gray-100 mb-6">
-      <div className="section-title text-lg font-bold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-3 mb-8 tracking-wide">
+    <div className="w-full bg-white rounded-lg p-4 shadow-sm border border-gray-100 mb-4">
+      <div className="section-title text-base font-bold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-2 mb-4 tracking-wide">
         {isFrench ? "Formation Continue" : "Continuing Education"}
       </div>
-      <div className="space-y-3">
+      <div className="space-y-2">
         {courses.map((course, index) => (
           <CourseItem key={index} course={course} />
         ))}
@@ -49,8 +49,8 @@ const CoursesTraining: React.FC = () => {
 
 const CourseItem: React.FC<{ course: Course }> = ({ course }) => {
   return (
-    <div className="flex flex-col mb-4">
-      <div className="flex items-center justify-between mb-1">
+    <div className="flex flex-col mb-3">
+      <div className="flex items-center justify-between mb-0.5">
         <div className="text-sm font-semibold text-cv-dark-grey">
           {course.title}
         </div>

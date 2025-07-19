@@ -11,8 +11,8 @@ const Interests: React.FC = () => {
   const isFrench = useLanguageStore((state) => state.isFrench);
 
   return (
-    <div className="w-full bg-white rounded-lg p-6 shadow-sm border border-gray-100 mb-6">
-      <div className="section-title text-lg font-bold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-3 mb-8 tracking-wide">
+    <div className="w-full bg-white rounded-lg p-4 shadow-sm border border-gray-100 mb-4">
+      <div className="section-title text-base font-bold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-2 mb-4 tracking-wide">
         {isFrench ? "Centres d'Intérêt" : "Interests"}
       </div>
       <InterestItem

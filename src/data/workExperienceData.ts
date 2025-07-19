@@ -150,15 +150,13 @@ export const workExperienceData: WorkExperienceData[] = [
       tasks: {
         french: [
           "Architecture et développement complet plateforme de mise en relation coachs-clients",
-          "Intégrations critiques: Stripe (paiements), Twilio (visio-conférence), AWS (infrastructure)",
-          "Stack technique: ReactJS frontend, Elixir backend, PostgreSQL, Docker",
-          "Préparation go-to-market avec investissement BPI France (10k€)",
+          "Intégrations critiques: Stripe, Twilio, AWS (infra)",
+          "Stack technique: ReactJS, Elixir, Docker",
         ],
         english: [
           "Full platform architecture and development for coach-client matching",
-          "Critical integrations: Stripe (payments), Twilio (video conferencing), AWS (infrastructure)",
-          "Tech stack: ReactJS frontend, Elixir backend, PostgreSQL, Docker",
-          "Go-to-market preparation with BPI France investment (€10k)",
+          "Critical integrations: Stripe, Twilio, AWS (infra)",
+          "Tech stack: ReactJS, Elixir, Docker",
         ],
       },
     },

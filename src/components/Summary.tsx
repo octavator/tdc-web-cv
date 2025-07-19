@@ -15,13 +15,13 @@ const Summary: React.FC = () => {
       </h1>
       <h3 className="summary-subtitle text-xl font-medium mb-4 text-blue-100 block">
         {isFrench
-          ? "Architecte Solutions & Lead Developer | VP Engineering"
-          : "Solutions Architect & Lead Developer | VP Engineering"}
+          ? "Solutions Architect & Tech Leader • CTO Ready"
+          : "Solutions Architect & Tech Leader • CTO Ready"}
       </h3>
       <div className="summary-resume text-lg text-blue-50 leading-relaxed max-w-4xl">
         {isFrench
-          ? "Architecte Solutions & Lead Developer expert dans la conception de systèmes critiques à haute disponibilité (99,9%), plus particulièrement dans la chaîne logistique. J'ai dirigé une équipe de 15 développeurs pour la plateforme Michelin Europe et supervisé architecturalement 20+ développeurs sur des projets stratégiques CAC40. J'associe vision stratégique et expertise technique pour créer des solutions durables et performantes."
-          : "Solutions Architect & Lead Developer expert in designing critical high-availability systems (99.9%), particularly in supply chain. Led a 15-developer team for Michelin Europe platform and architecturally supervised 20+ developers on strategic CAC40 projects. I combine strategic vision and technical expertise to create sustainable, high-performance solutions."}
+          ? "Solutions Architect expérimenté ayant dirigé une équipe de 15 développeurs et supervisé architecturalement 20+ ingénieurs sur des projets stratégiques CAC40. Expert en systèmes critiques haute disponibilité et transformation digitale. Je combine expertise technique approfondie en Elixir/React/DevOps et leadership d'équipe pour créer des solutions durables et performantes. Passionné par l'innovation tech au service de l'impact positif."
+          : "Experienced Solutions Architect who led a 15-developer team and architecturally supervised 20+ engineers on strategic CAC40 projects. Expert in critical high-availability systems and digital transformation. I combine deep technical expertise in Elixir/React/DevOps and team leadership to create sustainable, high-performance solutions. Passionate about tech innovation for positive impact."}
       </div>
     </div>
   );

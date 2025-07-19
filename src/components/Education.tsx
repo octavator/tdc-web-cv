@@ -7,8 +7,8 @@ const Education: React.FC = () => {
 
   return (
     <div className="my-6 w-full">
-      <div className="section-title text-lg font-semibold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-3 mb-8">
-        {isFrench ? "Formation & Leadership" : "Education & Leadership"}
+      <div className="section-title text-lg font-bold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-3 mb-8 tracking-wide">
+        {isFrench ? "Formation Exécutive" : "Executive Education"}
       </div>
 
       <div className="space-y-4">
@@ -20,24 +20,10 @@ const Education: React.FC = () => {
         />
 
         <EducationItem
-          name="Executive Leadership in Technology"
-          frenchName="Leadership Exécutif en Technologie"
-          timeRange="2022 - 2024"
-          location="Continuous Executive Development"
-        />
-
-        <EducationItem
           name="Cambridge Certificate of Proficiency in English (C2)"
           frenchName="Cambridge Certificate of Proficiency in English (C2)"
           timeRange="2011"
           location="Cambridge, UK"
-        />
-
-        <EducationItem
-          name="Enterprise Architecture & System Design"
-          frenchName="Architecture d'Entreprise & Conception Système"
-          timeRange="2021 - 2023"
-          location="Professional Certification"
         />
       </div>
     </div>

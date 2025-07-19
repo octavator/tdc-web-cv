@@ -12,24 +12,24 @@ const Interests: React.FC = () => {
 
   return (
     <div className="w-full bg-white rounded-lg p-6 shadow-sm border border-gray-100 mb-6">
-      <div className="section-title text-lg font-semibold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-3 mb-6">
-        {isFrench ? "Engagements" : "Leadership & Impact"}
+      <div className="section-title text-lg font-bold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-3 mb-8 tracking-wide">
+        {isFrench ? "Centres d'Intérêt" : "Interests"}
       </div>
       <InterestItem
-        frenchText="Finance Durable & Green Tech"
-        englishText="Sustainable Finance & Green Tech"
+        frenchText="Open Source & Nouvelles Technologies"
+        englishText="Open Source & Emerging Tech"
         icon={faMeteor}
       />
 
       <InterestItem
-        frenchText="Innovation Blockchain Impact"
-        englishText="Blockchain for Positive Impact"
+        frenchText="Échecs & Stratégie"
+        englishText="Chess & Strategy"
         icon={faChessBoard}
       />
 
       <InterestItem
-        frenchText="Rénovation Énergétique"
-        englishText="Energy-Efficient Home Renovation"
+        frenchText="Transition Énergétique"
+        englishText="Energy Transition"
         icon={faBook}
       />
 

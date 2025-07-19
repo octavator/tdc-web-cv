@@ -4,7 +4,6 @@ import { useCensoredStore } from "../store/useCensoredStore";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
-  faCalendar,
   faLocationDot,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
@@ -31,11 +30,12 @@ const PersonalInfos: React.FC = () => {
         isSensitive={true}
       />
 
-      <PersonalInfosItem
+      {/* Age does not seem to be essential info */}
+      {/* <PersonalInfosItem
         icon={faCalendar}
         text={isFrench ? "20 / 07 / 1994" : "07 / 20 / 1994"}
         isSensitive={true}
-      />
+      /> */}
 
       <PersonalInfosItem icon={faLocationDot} text="Paris, France" />
 

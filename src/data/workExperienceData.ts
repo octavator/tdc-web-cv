@@ -150,7 +150,7 @@ export const workExperienceData: WorkExperienceData[] = [
       tasks: {
         french: [
           "Améliorations UI/UX e-commerce DoubleSens & Giftsforchange (PrestaShop, WordPress)",
-          "Mécénat Solidarités International: audit UX, étude trafic, roadmap améliorations Octopus.solidarites.org",
+          "Mécénat Solidarités International: audit UX, roadmap améliorations techniques sur Octopus.solidarites.org",
           "Développement projet interne: mobile, IoT, IA et APIs",
         ],
         english: [
@@ -164,15 +164,15 @@ export const workExperienceData: WorkExperienceData[] = [
   {
     companyName: "Creads",
     timeRange: {
-      french: "Avr 2018 - Sep 2018",
-      english: "Apr 2018 - Sep 2018",
+      french: "Juil 2016 - Déc 2016 & Avr 2018 - Sep 2018",
+      english: "Jul 2016 - Dec 2016 & Apr 2018 - Sep 2018",
     },
     location: "Paris",
     description: {
       french:
-        "Plateforme de mise en relation créatifs freelances et clients. Équipe technique agile 7 développeurs",
+        "Plateforme créative B2B de mise en relation freelances et clients. Formation développement web en équipe agile",
       english:
-        "Digital matching platform for freelance creatives and clients. Agile technical team of 7 developers",
+        "Creative B2B platform connecting freelancers and clients. Web development training in agile team",
     },
     singlePosition: {
       title: {
@@ -181,44 +181,14 @@ export const workExperienceData: WorkExperienceData[] = [
       },
       tasks: {
         french: [
-          "Fonctionnalités majeures: page portfolio créatifs, espace échange client-designer",
-          "Maintenance continue solution SaaS, équipe technique agile 7 développeurs",
+          "Développement fonctionnalités core: portfolio créatifs, système messaging client-designer",
+          "Refactoring architecture plateforme, ré-implémentation routing pour améliorer efficacité équipe",
+          "Formation méthodologie Agile Scrum, bonnes pratiques développement web",
         ],
         english: [
-          "Major features: creative portfolio page, client-designer exchange space",
-          "Continuous SaaS solution maintenance, agile technical team of 7 developers",
-        ],
-      },
-    },
-  },
-  {
-    companyName: "Creads",
-    timeRange: {
-      french: "Juil 2016 - Déc 2016",
-      english: "Jul 2016 - Dec 2016",
-    },
-    location: "Paris",
-    description: {
-      french:
-        "Première expérience développement web. Intégration équipe technique 6 développeurs, méthodologie Scrum",
-      english:
-        "First web development experience. Integration into 6-developer technical team, Scrum methodology",
-    },
-    singlePosition: {
-      title: {
-        french: "Développeur Web",
-        english: "Web Developer",
-      },
-      tasks: {
-        french: [
-          "Correction anomalies fonctionnelles et visuelles plateforme Creads.fr",
-          "Ré-implémentation routes plateforme pour améliorer efficacité équipe",
-          "Apprentissage méthodologie Agile Scrum",
-        ],
-        english: [
-          "Functional and visual bug fixes on Creads.fr platform",
-          "Platform routes re-implementation to improve team efficiency",
-          "Agile Scrum methodology learning",
+          "Core feature development: creative portfolios, client-designer messaging system",
+          "Platform architecture refactoring, routing re-implementation to improve team efficiency",
+          "Agile Scrum methodology training, web development best practices",
         ],
       },
     },

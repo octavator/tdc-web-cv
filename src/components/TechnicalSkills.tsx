@@ -32,20 +32,28 @@ const skills = [
 const TechnicalSkills: React.FC = () => {
   const isFrench = useLanguageStore((state) => state.isFrench);
 
+  const getMasteryWidth = (mastery: number) => {
+    const emptyWidth = (100 - mastery) * 1.5; // 150px total width, so 1.5px per percent
+    return `${emptyWidth}px`;
+  };
+
   return (
-    <div className="my-6">
-      <div className="section-title text-xl font-bold mb-4">
+    <div className="my-6 w-full">
+      <div className="section-title text-lg font-bold uppercase text-cv-light-grey border-b border-cv-secondary my-2 pb-2">
         {isFrench ? "Compétences" : "Skills"}
       </div>
       {skills.map((skill, idx) => (
-        <div className="technical-section mb-4" key={idx}>
-          <div className="technical-title font-semibold mb-1">
+        <div className="technical-section flex flex-col mb-4" key={idx}>
+          <div className="technical-title my-1 first:mt-0">
             {isFrench ? skill.titleFr : skill.titleEn}
           </div>
-          <div className="technical-mastery bg-gray-200 rounded h-3 w-full">
+          <div
+            className="technical-mastery border border-cv-secondary h-2 flex flex-row-reverse bg-cv-secondary mb-2"
+            style={{ width: "150px" }}
+          >
             <div
-              className="rounded h-3 bg-blue-600"
-              style={{ width: `${skill.mastery}%` }}
+              className="bg-white h-full"
+              style={{ width: getMasteryWidth(skill.mastery) }}
             ></div>
           </div>
         </div>

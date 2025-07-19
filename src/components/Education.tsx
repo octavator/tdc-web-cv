@@ -6,8 +6,8 @@ const Education: React.FC = () => {
   const isFrench = useLanguageStore((state) => state.isFrench);
 
   return (
-    <div className="my-6">
-      <div className="section-title text-xl font-bold mb-4">
+    <div className="my-6 w-full">
+      <div className="section-title text-lg font-bold uppercase text-cv-light-grey border-b border-cv-secondary my-2 pb-2">
         {isFrench ? "Formation" : "Education"}
       </div>
 

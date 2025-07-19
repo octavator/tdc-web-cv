@@ -11,16 +11,22 @@ import CoursesTraining from "./components/CoursesTraining";
 
 function App() {
   return (
-    <div className="App p-4">
+    <div className="App">
       <ModeSwitcher />
-      <Summary />
-      <ProfilePicture />
-      <PersonalInfos />
-      <Education />
-      <WorkExperience />
-      <Interests />
-      <TechnicalSkills />
-      {/* <CoursesTraining /> */}
+      <div className="container">
+        <div className="flex-column">
+          <ProfilePicture />
+          <PersonalInfos />
+          <TechnicalSkills />
+          <Interests />
+        </div>
+        <div className="flex-column main-column">
+          <Summary />
+          <WorkExperience />
+          <CoursesTraining />
+          <Education />
+        </div>
+      </div>
     </div>
   );
 }

@@ -7,18 +7,18 @@ const Summary: React.FC = () => {
   const isCensored = useCensoredStore((state) => state.isCensored);
 
   return (
-    <div className="summary text-center my-6">
+    <div className="summary bg-cv-primary text-white p-5 mb-4 rounded-lg text-center">
       <h1
-        className={`text-3xl font-bold mb-2 ${isCensored ? "blur-md select-none" : ""}`}
+        className={`text-3xl font-bold mb-2 text-white ${isCensored ? "blur-md select-none" : ""}`}
       >
         Théophile de Cagny
       </h1>
-      <h3 className="summary-subtitle text-xl font-semibold mb-2">
+      <h3 className="summary-subtitle text-xl font-semibold mb-2 text-white inline-flex">
         {isFrench
           ? "Developpeur Full-stack Sr. |  Program Manager | Sr. Engineering Project Manager - Architecte Solution"
           : "Sr. Engineering Project Manager | Program Manager |Sr. Full-stack Engineer | Solutions Architect"}
       </h3>
-      <div className="summary-resume text-base text-gray-700">
+      <div className="summary-resume text-base text-white">
         {isFrench
           ? // @TODO: Adapté au secteur à impact positif. Décliner pour autres secteurs
             "Fort de tout ce que j'ai appris dans la logistique, je cherche à me" +

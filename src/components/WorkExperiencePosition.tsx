@@ -20,13 +20,13 @@ const WorkExperiencePosition: React.FC<WorkExperiencePositionProps> = ({
 
   return (
     <div>
-      <div className="xp-title font-bold mt-2">
+      <div className="xp-title flex items-end text-sm font-bold text-cv-primary mb-1 mt-1">
         {title}
-        <div className="xp-extra-infos text-xs text-gray-500">
+        <div className="xp-extra-infos ml-3 text-cv-light-grey text-xs flex justify-between flex-1">
           <div className="xp-timerange">{timeRange}</div>
         </div>
       </div>
-      <div className="xp-list ml-4">
+      <div className="xp-list mr-8 mb-2">
         {tasks.map((task, index) => (
           <WorkExperienceTask key={index} task={task} />
         ))}

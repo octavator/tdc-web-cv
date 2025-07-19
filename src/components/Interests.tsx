@@ -8,8 +8,10 @@ import {
 
 const Interests: React.FC = () => {
   return (
-    <div className="my-6">
-      <div className="section-title text-xl font-bold mb-4">Hobbies</div>
+    <div className="my-6 w-full">
+      <div className="section-title text-lg font-bold uppercase text-cv-light-grey border-b border-cv-secondary my-2 pb-2">
+        Hobbies
+      </div>
       <InterestItem
         frenchText="Physique / Astronomie"
         englishText="Physics / Astronomy"

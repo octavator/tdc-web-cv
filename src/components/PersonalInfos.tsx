@@ -21,7 +21,7 @@ const PersonalInfos: React.FC = () => {
   const isFrench = useLanguageStore((state) => state.isFrench);
 
   return (
-    <div>
+    <div className="w-full">
       <PersonalInfosItem
         icon={faEnvelope}
         text="Theophile.decagny@gmail.com"
@@ -61,12 +61,13 @@ const PersonalInfosItem: React.FC<PersonalInfosItemProps> = ({
   const isCensored = useCensoredStore((state) => state.isCensored);
 
   return (
-    <div className="info-section flex items-center mb-2">
-      <div className="info-icon mr-2">
-        <FontAwesomeIcon icon={icon} className="text-blue-600" />
-      </div>
+    <div className="info-section flex mb-3 max-w-44 text-xs break-all w-full">
+      <FontAwesomeIcon
+        icon={icon}
+        className="info-icon text-cv-secondary mr-2.5"
+      />
       <div
-        className={`text-infos ${
+        className={`text-infos ${text.includes("@") ? "email break-normal" : "break-words"} ${
           isSensitive && isCensored ? "blur-md select-none" : ""
         }`}
       >

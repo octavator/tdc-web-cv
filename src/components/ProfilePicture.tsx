@@ -7,13 +7,14 @@ const ProfilePicture: React.FC = () => {
 
   return (
     // @TODO: check image properties are alright for every screen size
-    <div className="profile-picture flex justify-center my-6">
+    <div className="profile-picture mb-4">
       <img
         src={profileImg}
         alt="Profil"
-        className={`rounded-full w-40 h-40 object-cover border-4 border-blue-600 shadow-lg ${
+        className={`rounded-lg w-44 h-44 object-cover ${
           isCensored ? "blur-md select-none" : ""
         }`}
+        style={{ width: "180px", height: "180px" }}
       />
     </div>
   );

@@ -12,13 +12,13 @@ const ModeSwitcher: React.FC = () => {
     <div className="flex flex-col gap-2 no-print">
       <button
         onClick={toggleLanguage}
-        className="px-3 py-1.5 text-xs rounded-md bg-white/90 text-cv-primary border border-cv-primary/20 hover:bg-cv-primary/5 transition-all duration-200 shadow-sm backdrop-blur-sm font-medium"
+        className="px-3 py-1.5 text-xs rounded-md bg-white/90 text-cv-primary border border-cv-primary/20 hover:bg-cv-primary/5 transition-all duration-200 backdrop-blur-sm font-medium"
       >
         {isFrench ? "EN" : "FR"}
       </button>
       <button
         onClick={toggleCensored}
-        className="px-3 py-1.5 text-xs rounded-md bg-white/90 text-cv-accent border border-cv-accent/20 hover:bg-cv-accent/5 transition-all duration-200 shadow-sm backdrop-blur-sm font-medium"
+        className="px-3 py-1.5 text-xs rounded-md bg-white/90 text-cv-accent border border-cv-accent/20 hover:bg-cv-accent/5 transition-all duration-200 backdrop-blur-sm font-medium"
       >
         {isCensored ? "👁️" : "🔒"}
       </button>

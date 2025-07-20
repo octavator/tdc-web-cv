@@ -151,12 +151,14 @@ export const workExperienceData: WorkExperienceData[] = [
         french: [
           "Architecture & développement complet plateforme de mise en relation coachs-clients",
           "Intégrations critiques: Stripe, Twilio (visio-conférence), AWS",
-          "Stack technique: ReactJS, Elixir, Docker",
+          "Stack technique: ReactJS frontend, Elixir backend, Docker",
+          "Préparation go-to-market avec investissement BPI France (10k€), MVP complet et fonctionnel",
         ],
         english: [
           "Full platform architecture and development for coach-client matching",
           "Critical integrations: Stripe, Twilio (video conferencing), AWS",
-          "Tech stack: ReactJS, Elixir, Docker",
+          "Tech stack: ReactJS frontend, Elixir backend, Docker",
+          "Go-to-market preparation with BPI France investment (€10k), complete and functional MVP",
         ],
       },
     },

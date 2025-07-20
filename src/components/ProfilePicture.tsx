@@ -13,7 +13,7 @@ const ProfilePicture: React.FC = () => {
           <img
             src={profileImg}
             alt="CTO Profile"
-            className={`relative rounded-2xl w-56 h-56 object-cover shadow-2xl border-4 border-white/50 backdrop-blur-sm transition-all duration-300 group-hover:scale-105 ${
+            className={`relative rounded-2xl w-56 h-56 object-cover border-4 border-white/50 backdrop-blur-sm transition-all duration-300 group-hover:scale-105 ${
               isCensored ? "blur-md select-none" : ""
             }`}
           />

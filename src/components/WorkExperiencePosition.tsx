@@ -19,7 +19,7 @@ const WorkExperiencePosition: React.FC<WorkExperiencePositionProps> = ({
   const tasks = isFrench ? position.tasks.french : position.tasks.english;
 
   return (
-    <div className="bg-gray-50 rounded-lg p-3 mb-3">
+    <div className="xp-position bg-gray-50 rounded-lg p-3 mb-3">
       <div className="xp-title flex items-start justify-between mb-2">
         <div className="text-base font-semibold text-cv-secondary">{title}</div>
         <div className="xp-extra-infos text-cv-light-grey text-sm font-medium">

@@ -16,8 +16,8 @@ const Interests: React.FC = () => {
         {isFrench ? "Centres d'Intérêt" : "Interests"}
       </div>
       <InterestItem
-        frenchText="Open Source & Nouvelles Technologies"
-        englishText="Open Source & Emerging Tech"
+        frenchText="IA & Open Source"
+        englishText="AI & Open Source"
         icon={faMeteor}
       />
 

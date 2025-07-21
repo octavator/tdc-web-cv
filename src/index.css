@@ -93,10 +93,10 @@ h3 {
   @apply flex flex-col;
 }
 
-/* .flex-column:first-of-type {
-  @apply w-80;
-  min-width: 220px;
-} */
+.flex-column:first-of-type {
+  @apply w-72;
+  min-width: 200px;
+}
 
 .main-column {
   @apply flex-1;
@@ -200,7 +200,7 @@ h3 {
 
   /* Ensure proper page breaks */
   .education-block,
-  .xp-position,
+  /* .xp-position, */
   .w-full.bg-white {
     page-break-inside: avoid;
     break-inside: avoid;
@@ -230,9 +230,9 @@ h3 {
   }
 
   /* Executive print layout */
-  /* .flex-column:first-of-type {
+  .flex-column:first-of-type {
     width: 250px !important;
-  } */
+  }
 
   /* Profile picture optimizations */
   .profile-picture .absolute,
@@ -241,9 +241,15 @@ h3 {
     display: none !important;
   }
 
+  .profile-picture .relative {
+    padding: 2px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 40%, var(--accent-color) 80%) !important;
+    border-radius: 1rem !important;
+  }
+
   .profile-picture img {
     box-shadow: none !important;
-    border: 2px solid var(--primary-color) !important;
+    border: 2px solid white !important;
     width: 180px !important;
     height: 180px !important;
   }
@@ -275,6 +281,30 @@ h3 {
     background: var(--primary-color) !important;
   }
 
+
+  /* Fix interest icons alignment in Firefox print */
+  .interest-element {
+    align-items: baseline !important;
+    display: flex !important;
+    line-height: 1.5 !important;
+  }
+
+  .interest-icon {
+    display: inline-block !important;
+    vertical-align: baseline !important;
+    line-height: 1 !important;
+    margin-top: 2px !important;
+  }
+
+  .interest-icon svg {
+    vertical-align: baseline !important;
+    line-height: 1 !important;
+  }
+
+  .interest-text {
+    line-height: 1.5 !important;
+    vertical-align: baseline !important;
+  }
 
   /* Optimize text sizes for print readability */
   .text-lg {

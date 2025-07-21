@@ -2,7 +2,7 @@ import React from "react";
 import { useLanguageStore } from "../store/useLanguageStore";
 
 interface Course {
-  title: string;
+  title: { french: string; english: string };
   year: string;
   organization: string;
 }
@@ -12,22 +12,22 @@ const CoursesTraining: React.FC = () => {
 
   const courses: Course[] = [
     {
-      title: "Management",
+      title: { french: "Management", english: "Management" },
       year: "2025",
       organization: "Chapters",
     },
     {
-      title: "Intervenant FIAB",
+      title: { french: "Intervenant FIAB", english: "FIAB Trainor" },
       year: "2024-2025",
       organization: "IMT Atlantique",
     },
     {
-      title: "Cybersécurité",
+      title: { french: "Cybersécurité", english: "Cybersecurity" },
       year: "2023",
       organization: "ANSSI",
     },
     {
-      title: "Proficiency in English (C2)",
+      title: { french: "Proficiency in English (C2)", english: "Proficiency in English (C2)" },
       year: "2011",
       organization: "Cambridge University, UK",
     },
@@ -48,13 +48,15 @@ const CoursesTraining: React.FC = () => {
 };
 
 const CourseItem: React.FC<{ course: Course }> = ({ course }) => {
+  const isFrench = useLanguageStore((state) => state.isFrench);
+
   return (
     <div className="flex flex-col mb-3">
       <div className="flex items-center justify-between mb-0.5">
         <div className="text-sm font-semibold text-cv-dark-grey">
-          {course.title}
+          {isFrench ? course.title.french : course.title.english}
         </div>
-        <div className="text-xs font-bold text-cv-primary">
+        <div className="text-xs font-bold text-cv-primary text-end">
           {course.year}
         </div>
       </div>

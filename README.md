@@ -2,6 +2,8 @@
 
 Welcome ! This CV is a fully operational website hosted on *TODO*.
 
+Keep in mind that the export to PDF functionality doesn't handle gradiants properly on Chrome. Prefer Firefox instead for exporting to PDF.
+
 Its main functionalities:
 
 - A CV, no surprise there. You can use your browser's print function to export it to PDF.

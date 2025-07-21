@@ -33,8 +33,8 @@ const TechnicalSkills: React.FC = () => {
   const isFrench = useLanguageStore((state) => state.isFrench);
 
   const getMasteryWidth = (mastery: number) => {
-    const emptyWidth = (100 - mastery) * 2.4; // 240px total width, so 2.4px per percent
-    return `${emptyWidth}px`;
+    // Direct width for the colored bar
+    return `${mastery}%`;
   };
 
   return (
@@ -53,12 +53,14 @@ const TechnicalSkills: React.FC = () => {
             </div>
           </div>
           <div
-            className="technical-mastery border border-cv-primary/20 h-3 flex flex-row-reverse bg-gradient-to-r from-cv-primary to-cv-secondary rounded-full overflow-hidden transition-all duration-300"
-            style={{ width: "240px" }}
+            className="technical-mastery border border-cv-primary/20 h-3 bg-gray-200 rounded-full overflow-hidden"
           >
             <div
-              className="bg-gradient-to-r from-gray-100 to-gray-200 h-full transition-all duration-500 ease-out"
-              style={{ width: getMasteryWidth(skill.mastery) }}
+              className="h-full rounded-full"
+              style={{ 
+                width: getMasteryWidth(skill.mastery),
+                background: 'linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 40%, var(--accent-color) 80%)'
+              }}
             ></div>
           </div>
         </div>

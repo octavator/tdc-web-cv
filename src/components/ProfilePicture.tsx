@@ -6,7 +6,7 @@ const ProfilePicture: React.FC = () => {
   const isCensored = useCensoredStore((state) => state.isCensored);
 
   return (
-    <div className="profile-picture mb-8 flex justify-center">
+    <div className="profile-picture mb-6 flex justify-center">
       <div className="relative group">
         <div className="absolute -inset-1 bg-gradient-to-r from-cv-primary via-cv-secondary to-cv-accent rounded-2xl blur-sm opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
         <div className="relative">

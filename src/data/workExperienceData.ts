@@ -130,7 +130,7 @@ export const workExperienceData: WorkExperienceData[] = [
     ],
   },
   {
-    companyName: "CoachLab",
+    companyName: "CoachLab, Co-founder & CTO",
     timeRange: {
       french: "Juil 2021 - Déc 2022",
       english: "Jul 2021 - Dec 2022",
@@ -142,22 +142,22 @@ export const workExperienceData: WorkExperienceData[] = [
       english:
         "SaaS coaching platform: video, scheduling, payments. Complete MVP",
     },
-    singlePosition: {
-      title: {
-        french: "Co-fondateur & CTO",
-        english: "Co-founder & CTO",
-      },
-      tasks: {
-        french: [
-          "Architecture & développement complet plateforme",
-          "Intégrations critiques: Stripe, Twilio, AWS",
-        ],
-        english: [
-          "Full platform architecture and development",
-          "Critical integrations: Stripe, Twilio, AWS",
-        ],
-      },
-    },
+    // singlePosition: {
+    //   title: {
+    //     french: "Co-fondateur & CTO",
+    //     english: "Co-founder & CTO",
+    //   },
+    //   tasks: {
+    //     french: [
+    //       "Architecture & développement complet plateforme",
+    //       "Intégrations critiques: Stripe, Twilio, AWS",
+    //     ],
+    //     english: [
+    //       "Full platform architecture and development",
+    //       "Critical integrations: Stripe, Twilio, AWS",
+    //     ],
+    //   },
+    // },
   },
   {
     companyName: "Suricats Consulting",
@@ -172,51 +172,52 @@ export const workExperienceData: WorkExperienceData[] = [
       english:
         "Digital transformation consulting & Solidarités International volunteering",
     },
-    singlePosition: {
-      title: {
-        french: "Consultant Junior",
-        english: "Junior Consultant",
-      },
-      tasks: {
-        french: [
-          "Améliorations UI/UX sites e-commerce",
-          "Audit UX Solidarités International, mobile/IoT/IA",
-        ],
-        english: [
-          "E-commerce sites UI/UX improvements",
-          "Solidarités International UX audit, mobile/IoT/AI",
-        ],
-      },
-    },
+    // singlePosition: {
+    //   title: {
+    //     french: "Consultant Junior",
+    //     english: "Junior Consultant",
+    //   },
+    //   tasks: {
+    //     french: [
+    //       "Améliorations UI/UX sites e-commerce",
+    //       "Audit UX Solidarités International, mobile/IoT/IA",
+    //     ],
+    //     english: [
+    //       "E-commerce sites UI/UX improvements",
+    //       "Solidarités International UX audit, mobile/IoT/AI",
+    //     ],
+    //   },
+    // },
   },
-  {
-    companyName: "Creads",
-    timeRange: {
-      french: "Juil 2016 - Déc 2016 & Avr 2018 - Sep 2018",
-      english: "Jul 2016 - Dec 2016 & Apr 2018 - Sep 2018",
-    },
-    location: "Paris",
-    description: {
-      french:
-        "Plateforme B2B freelances-clients. Formation développement web agile",
-      english:
-        "B2B freelancer-client platform. Agile web development training",
-    },
-    singlePosition: {
-      title: {
-        french: "Développeur Web",
-        english: "Web Developer",
-      },
-      tasks: {
-        french: [
-          "Portfolios créatifs, messaging client-designer",
-          "Refactoring architecture, formation Agile Scrum",
-        ],
-        english: [
-          "Creative portfolios, client-designer messaging",
-          "Architecture refactoring, Agile Scrum training",
-        ],
-      },
-    },
-  },
+  // First 2 Internships, not essential
+  // {
+  //   companyName: "Creads",
+  //   timeRange: {
+  //     french: "Juil 2016 - Déc 2016 & Avr 2018 - Sep 2018",
+  //     english: "Jul 2016 - Dec 2016 & Apr 2018 - Sep 2018",
+  //   },
+  //   location: "Paris",
+  //   description: {
+  //     french:
+  //       "Plateforme B2B freelances-clients. Formation développement web agile",
+  //     english:
+  //       "B2B freelancer-client platform. Agile web development training",
+  //   },
+  //   singlePosition: {
+  //     title: {
+  //       french: "Développeur Web",
+  //       english: "Web Developer",
+  //     },
+  //     tasks: {
+  //       french: [
+  //         "Portfolios créatifs, messaging client-designer",
+  //         "Refactoring architecture, formation Agile Scrum",
+  //       ],
+  //       english: [
+  //         "Creative portfolios, client-designer messaging",
+  //         "Architecture refactoring, Agile Scrum training",
+  //       ],
+  //     },
+  //   },
+  // },
 ];

@@ -27,15 +27,15 @@ const CoursesTraining: React.FC = () => {
       organization: "ANSSI",
     },
     {
-      title: { french: "Proficiency in English (C2)", english: "Proficiency in English (C2)" },
+      title: { french: "Proficiency in English", english: "Proficiency in English" },
       year: "2011",
       organization: "Cambridge University, UK",
     },
   ];
 
   return (
-    <div className="w-full bg-white rounded-lg p-4 border border-gray-100 mb-4 courses-training-list">
-      <div className="section-title text-base font-bold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-2 mb-4 tracking-wide">
+    <div className="w-full bg-white rounded-lg p-3 pb-0 border border-gray-100 mb-4 courses-training-list">
+      <div className="section-title text-base font-semibold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-2 mb-4 tracking-wide">
         {isFrench ? "Formation Continue" : "Continuing Education"}
       </div>
       <div className="space-y-2">
@@ -56,7 +56,7 @@ const CourseItem: React.FC<{ course: Course }> = ({ course }) => {
         <div className="text-sm font-semibold text-cv-dark-grey">
           {isFrench ? course.title.french : course.title.english}
         </div>
-        <div className="text-xs font-bold text-cv-primary text-end">
+        <div className="text-xs font-semibold text-cv-primary text-end">
           {course.year}
         </div>
       </div>

@@ -24,8 +24,8 @@ const WorkExperienceItem: React.FC<WorkExperienceItemProps> = ({ data }) => {
     : data.description.english;
 
   return (
-    <div className="xp-block bg-white rounded-xl p-4 border border-gray-100 mb-4 border-l-4 border-l-cv-primary">
-      <div className="xp-establishment text-lg font-bold text-cv-primary mb-1.5 flex items-start justify-between">
+    <div className="xp-block bg-white rounded-xl p-3 pb-0 border border-gray-100 mb-4 border-l-4 border-l-cv-primary">
+      <div className="xp-establishment text-lg font-semibold text-cv-primary mb-1.5 flex items-start justify-between">
         <span className="xp-client-name">{companyName}</span>
         <div className="xp-extra-infos text-cv-light-grey text-sm font-medium flex flex-col items-end">
           <div className="xp-timerange mb-1">{timeRange}</div>

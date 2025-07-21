@@ -7,7 +7,7 @@ import Education from "./components/Education";
 import WorkExperience from "./components/WorkExperience";
 import Interests from "./components/Interests";
 import TechnicalSkills from "./components/TechnicalSkills";
-import CoursesTraining from "./components/CoursesTraining";
+// import CoursesTraining from "./components/CoursesTraining";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
           <PersonalInfos />
           <TechnicalSkills />
           <Education />
-          <CoursesTraining />
+          {/* <CoursesTraining /> */}
           <Interests />
         </div>
         <div className="flex-column main-column">

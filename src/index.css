@@ -94,8 +94,7 @@ h3 {
 }
 
 .flex-column:first-of-type {
-  @apply w-72;
-  min-width: 200px;
+  @apply w-64;
 }
 
 .main-column {
@@ -110,15 +109,6 @@ h3 {
 
 .executive-card {
   @apply bg-white rounded-lg p-6 shadow-sm border border-gray-100;
-}
-
-/* Professional spacing and visual enhancements */
-.info-section {
-  @apply mb-4 text-sm;
-}
-
-.technical-section {
-  @apply mb-5;
 }
 
 .xp-block {
@@ -156,9 +146,8 @@ h3 {
 }
 
 .interest-element {
-  @apply mb-6 text-base;
   transition: all 0.2s ease;
-  padding: 0.75rem;
+  padding: 0.5rem;
   border-radius: 8px;
 }
 
@@ -188,7 +177,7 @@ h3 {
   }
 
   .container {
-    @apply shadow-none m-0 p-4;
+    @apply shadow-none m-0 p-3;
     background: white;
     border-radius: 0;
     gap: 1.4rem;
@@ -235,7 +224,7 @@ h3 {
 
   /* Executive print layout */
   .flex-column:first-of-type {
-    width: 250px !important;
+    width: 215px !important;
   }
 
   /* Profile picture optimizations */

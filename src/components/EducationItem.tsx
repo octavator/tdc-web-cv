@@ -26,7 +26,7 @@ const EducationItem: React.FC<EducationItemProps> = ({
           <br/>
           {isFrench && frenchName ? frenchName : name}
         </div>
-        <div className="text-xs font-bold text-cv-primary text-end">
+        <div className="text-xs font-semibold text-cv-primary text-end">
           {graduationYear}
         </div>
       </div>

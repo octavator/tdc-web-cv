@@ -13,7 +13,7 @@ const Summary: React.FC = () => {
       >
         Théophile de Cagny
       </h1>
-      <h3 className="summary-subtitle text-base font-medium mb-1 text-blue-100 block">
+      <h3 className="summary-subtitle text-base font-bold mb-1 text-blue-100 block">
         {isFrench
           ? "Solutions Architect & Tech Leader"
           : "Solutions Architect & Tech Leader"}

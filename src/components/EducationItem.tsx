@@ -5,7 +5,7 @@ interface EducationItemProps {
   name: string;
   establishment: string;
   frenchName?: string;
-  timeRange: string;
+  graduationYear: string;
   location?: string;
 }
 
@@ -13,7 +13,7 @@ const EducationItem: React.FC<EducationItemProps> = ({
   name,
   establishment,
   frenchName,
-  timeRange,
+  graduationYear,
   location,
 }) => {
   const isFrench = useLanguageStore((state) => state.isFrench);
@@ -27,7 +27,7 @@ const EducationItem: React.FC<EducationItemProps> = ({
           {isFrench && frenchName ? frenchName : name}
         </div>
         <div className="text-xs font-bold text-cv-primary text-end">
-          {timeRange}
+          {graduationYear}
         </div>
       </div>
       {location && (

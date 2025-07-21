@@ -16,7 +16,7 @@ const Education: React.FC = () => {
           establishment="EPITECH"
           name="Master in Computer Science"
           frenchName="Master en Informatique"
-          timeRange="2015 - 2020"
+          graduationYear="2020"
           location="Paris"
         />
       </div>

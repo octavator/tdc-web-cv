@@ -34,7 +34,7 @@ const CoursesTraining: React.FC = () => {
   ];
 
   return (
-    <div className="w-full bg-white rounded-lg p-4 border border-gray-100 mb-4">
+    <div className="w-full bg-white rounded-lg p-4 border border-gray-100 mb-4 courses-training-list">
       <div className="section-title text-base font-bold uppercase text-cv-dark-grey border-b-2 border-cv-primary pb-2 mb-4 tracking-wide">
         {isFrench ? "Formation Continue" : "Continuing Education"}
       </div>

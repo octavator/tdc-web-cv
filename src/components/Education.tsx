@@ -17,7 +17,6 @@ const Education: React.FC = () => {
           name="Master in Computer Science"
           frenchName="Master en Informatique"
           graduationYear="2020"
-          location="Paris"
         />
       </div>
       <div className="space-y-2">

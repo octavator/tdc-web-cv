@@ -44,16 +44,14 @@ export const workExperienceData: WorkExperienceData[] = [
         },
         tasks: {
           french: [
-            "Architecture NFR (scalabilité, fiabilité, sécurité) pour dizaines d'apps critiques CAC40",
-            "Conception & migration sécurisée plateforme export maritime Michelin (~1Md€ de CA)",
-            "Collaboration Dev/Ops/Security pour transformation digitale Michelin",
-            "Optimisation performance & coûts environnement haute disponibilité industriel",
+            "Garant NFRs pour plusieurs clients (scalabilité, fiabilité, sécurité..)",
+            "Conception plateforme pour grands exports Michelin (~1Md€ de CA)",
+            "Migration d'infrastructure sur nouveau cloud bare-metal (150+ VMs)",
           ],
           english: [
-            "NFR architecture (scalability, reliability, security) for dozens of critical CAC40 apps",
-            "Design & safe migration of Michelin overseas export platform (~€1B revenue)",
-            "Cross-functional Dev/Ops/Security collaboration for Michelin digital transformation",
-            "Performance & cost optimization in high-availability industrial environment",
+            "NFRs guardian for multiples clients (scalability, reliability, security..)",
+            "Design Michelin's overseas export platform (~€1B revenue)",
+            "Migration of infrastructure on new bare-metal cloud (150+ VMs)",
           ],
         },
       },
@@ -68,16 +66,16 @@ export const workExperienceData: WorkExperienceData[] = [
         },
         tasks: {
           french: [
-            "Lead technique équipe 15 dev: plateforme e-commerce Michelin Europe (250+ millions €/an)",
-            "Architecture & décommissionnement Legacy, nouveau flux EDI européen",
+            "Lead technique équipe 18 devs: plateforme e-commerce Michelin Europe (250+ millions €/an)",
+            "Features centrales site Europe Michelin: administration, éligiblité, ATP..",
             "Plan de Reprise d'Activité (DRP) de 20~ applications critiques",
-            "Formations, processus, qualité releases et bonnes pratiques",
+            "Astreinte applications critiques multi-clients: Stellantis, Michelin..",
           ],
           english: [
-            "Technical lead 15-dev team: Michelin Europe e-commerce platform (250+ millions €/year)",
-            "Architecture & Legacy decommissioning, new European EDI flow",
+            "Technical lead 18-devs team: Michelin Europe e-commerce platform (250+ millions €/year)",
+            "Core Michelin Order Capture features: offer administration, eligibility, product search..",
             "Disaster Recovery Plan (DRP) for 20~ critical applications",
-            "Mentoring, processus, release quality and best practices",
+            "Critical multi-client applications on-call: Stellantis, Michelin..",
           ],
         },
       },
@@ -87,43 +85,21 @@ export const workExperienceData: WorkExperienceData[] = [
           english: "Sr. Software Engineer & Manager",
         },
         timeRange: {
-          french: "Déc 2021 - Déc 2022",
-          english: "Dec 2021 - Dec 2022",
+          french: "Oct 2020 - Déc 2022",
+          english: "Oct 2020 - Dec 2022",
         },
         tasks: {
           french: [
-            "Features centrales Order Capture Michelin: administration offres, éligibilité, recherche produit..",
-            "Projet agrégation stocks distributeurs partenaires",
-            "Cadrage, conception & management de l'équipe de dev",
-            "Astreinte applications critiques multi-clients (Michelin, Stellantis, Ba&sh..)",
-          ],
-          english: [
-            "Core Michelin Order Capture features: offer administration, eligibility, product search..",
-            "Partner distributor stock aggregation project (10+ millions in value)",
-            "Scoping, design & management of development team",
-            "Critical multi-client applications on-call (Michelin, Stellantis, Ba&sh..)",
-          ],
-        },
-      },
-      {
-        title: {
-          french: "Ingénieur Développeur",
-          english: "Software Engineer",
-        },
-        timeRange: {
-          french: "Oct 2020 - Déc 2021",
-          english: "Oct 2020 - Dec 2021",
-        },
-        tasks: {
-          french: [
+            "Agrégation stocks partenaires Michelin (10+ millions €/an)",
             "Évolutions site Michelin prise de commande Europe",
-            "Maintenance & évolution OMS & WMS Jardiland en solo",
-            "Développement intranet/extranet BAPIF",
+            "Gestion des commandes & stocks magasins Jardiland (200+)",
+            "Nouvel intranet & extranet Banque Alimentaire Paris & IdF",
           ],
           english: [
-            "Michelin Europe & Thailand order capture site evolution",
-            "Solo Jardiland OMS & WMS maintenance & evolution",
-            "BAPIF new intranet/extranet development",
+            "Michelin's partners' stocks aggregation (10+ millions €/year)",
+            "Michelin Europe & Thailand order capture evolution",
+            "Order & stock management for Jardiland stores (200+)",
+            "New Banque Alimentaire intranet & extranet for Paris & IdF",
           ],
         },
       },

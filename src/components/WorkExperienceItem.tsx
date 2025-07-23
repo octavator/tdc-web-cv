@@ -24,15 +24,15 @@ const WorkExperienceItem: React.FC<WorkExperienceItemProps> = ({ data }) => {
     : data.description.english;
 
   return (
-    <div className="xp-block bg-white rounded-xl p-3 pb-0 border border-gray-100 mb-4 border-l-4 border-l-cv-primary">
-      <div className="xp-establishment text-lg font-semibold text-cv-primary mb-1.5 flex items-start justify-between">
+    <div className="xp-block bg-white rounded-xl pb-0 border border-gray-100 mb-4 border-l-4 border-l-cv-primary">
+      <div className="xp-establishment text-lg font-semibold text-cv-primary mb-1.5 flex items-center justify-between">
         <span className="xp-client-name">{companyName}</span>
-        <div className="xp-extra-infos text-cv-light-grey text-sm font-medium flex flex-col items-end">
-          <div className="xp-timerange mb-1">{timeRange}</div>
-          <div className="xp-location text-xs">{data.location}</div>
+        <div className="xp-extra-infos text-cv-light-grey text-sm font-medium flex items-end">
+          <div className="xp-location mr-1">{data.location},</div>
+          <div className="xp-timerange">{timeRange}</div>
         </div>
       </div>
-      <div className="xp-establishment-resume text-xs font-medium italic text-cv-light-grey mb-3 leading-relaxed">
+      <div className="xp-establishment-resume text-xs font-medium italic text-cv-light-grey mb-1 leading-relaxed">
         {description}
       </div>
 

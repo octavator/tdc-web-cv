@@ -15,6 +15,7 @@ interface PersonalInfosItemProps {
   icon: IconDefinition;
   text: string;
   isSensitive?: boolean;
+  textSize?: string;
 }
 
 const PersonalInfos: React.FC = () => {
@@ -29,6 +30,7 @@ const PersonalInfos: React.FC = () => {
         icon={faEnvelope}
         text="Theophile.decagny@gmail.com"
         isSensitive={true}
+        textSize="text-xs"
       />
 
       {/* Age does not seem to be essential info */}
@@ -39,7 +41,7 @@ const PersonalInfos: React.FC = () => {
       /> */}
 
       {/* Might be redundant as every work experience specifices Paris */}
-      {/* <PersonalInfosItem icon={faLocationDot} text="Paris, France" /> */}
+      <PersonalInfosItem icon={faLocationDot} text="Paris, France" />
 
       <PersonalInfosItem icon={faPhone} text="+33 6 70 70 36 72" />
 
@@ -63,11 +65,12 @@ const PersonalInfosItem: React.FC<PersonalInfosItemProps> = ({
   icon,
   text,
   isSensitive = false,
+  textSize = "text-sm"
 }) => {
   const isCensored = useCensoredStore((state) => state.isCensored);
 
   return (
-    <div className="info-section flex items-start mb-2 text-sm text-cv-dark-grey w-full">
+    <div className={`info-section flex items-start mb-2 text-cv-dark-grey w-full ${textSize}`}>
       <FontAwesomeIcon
         icon={icon}
         className="info-icon text-cv-primary mr-1.5 mt-1 flex-shrink-0"

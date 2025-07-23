@@ -28,9 +28,9 @@ export const workExperienceData: WorkExperienceData[] = [
     location: "Paris",
     description: {
       french:
-        "SaaS éditeur - systèmes critiques CAC40: Michelin, BUT, Carrefour..",
+        "SaaS éditeur - systèmes critiques CAC40: Orange, Michelin, LVMH, Stellantis..",
       english:
-        "SaaS editor - critical systems for CAC40: Michelin, BUT, Carrefour..",
+        "SaaS editor - critical systems for CAC40: Orange, Michelin, LVMH, Stellantis..",
     },
     positions: [
       {
@@ -44,13 +44,13 @@ export const workExperienceData: WorkExperienceData[] = [
         },
         tasks: {
           french: [
-            "Garant NFRs pour plusieurs clients (scalabilité, fiabilité, sécurité..)",
-            "Conception plateforme pour grands exports Michelin (~1Md€ de CA)",
+            "Garant NFRs multi-clients (scalabilité, fiabilité, sécurité..)",
+            "Conception de la plateforme grands exports Michelin (~1Md€ de CA)",
             "Migration d'infrastructure sur nouveau cloud bare-metal (150+ VMs)",
           ],
           english: [
             "NFRs guardian for multiples clients (scalability, reliability, security..)",
-            "Design Michelin's overseas export platform (~€1B revenue)",
+            "Design of Michelin's overseas export platform (~€1B revenue)",
             "Migration of infrastructure on new bare-metal cloud (150+ VMs)",
           ],
         },
@@ -67,15 +67,15 @@ export const workExperienceData: WorkExperienceData[] = [
         tasks: {
           french: [
             "Lead technique équipe 18 devs: plateforme e-commerce Michelin Europe (250+ millions €/an)",
-            "Features centrales site Europe Michelin: administration, éligiblité, ATP..",
+            "Features centrales site Europe Michelin: recherche produit, panier, commandes..",
             "Plan de Reprise d'Activité (DRP) de 20~ applications critiques",
-            "Astreinte applications critiques multi-clients: Stellantis, Michelin..",
+            "Astreinte mensuelle d'applications critiques: Stellantis, Michelin..",
           ],
           english: [
             "Technical lead 18-devs team: Michelin Europe e-commerce platform (250+ millions €/year)",
-            "Core Michelin Order Capture features: offer administration, eligibility, product search..",
+            "Core Michelin Order Capture features: product search, cart, orders..",
             "Disaster Recovery Plan (DRP) for 20~ critical applications",
-            "Critical multi-client applications on-call: Stellantis, Michelin..",
+            "Monthly on-call critical applications : Stellantis, Michelin..",
           ],
         },
       },

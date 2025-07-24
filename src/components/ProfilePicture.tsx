@@ -12,7 +12,7 @@ const ProfilePicture: React.FC = () => {
         <div className="relative">
           <img
             src={profileImg}
-            alt="Théophile de Cagny's picture"
+            alt="Théophile de Cagny"
             className={`relative rounded-2xl w-56 h-56 object-cover border-4 border-white/50 backdrop-blur-sm transition-all duration-300 group-hover:scale-105 ${
               isCensored ? "blur-md select-none" : ""
             }`}

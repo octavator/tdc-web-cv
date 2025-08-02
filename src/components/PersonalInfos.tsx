@@ -16,6 +16,7 @@ interface PersonalInfosItemProps {
   text: string;
   isSensitive?: boolean;
   textSize?: string;
+  itemLink?: string;
 }
 
 const PersonalInfos: React.FC = () => {
@@ -56,6 +57,7 @@ const PersonalInfos: React.FC = () => {
         icon={faGithub}
         text="github.com/octavator"
         isSensitive={true}
+        itemLink="https://www.github.com/octavator"
       />
     </div>
   );
@@ -65,24 +67,27 @@ const PersonalInfosItem: React.FC<PersonalInfosItemProps> = ({
   icon,
   text,
   isSensitive = false,
-  textSize = "text-sm"
+  textSize = "text-sm",
+  itemLink = undefined,
 }) => {
   const isCensored = useCensoredStore((state) => state.isCensored);
 
   return (
-    <div className={`info-section flex items-start mb-2 text-cv-dark-grey w-full ${textSize}`}>
-      <FontAwesomeIcon
-        icon={icon}
-        className="info-icon text-cv-primary mr-1.5 mt-1 flex-shrink-0"
-      />
-      <div
-        className={`text-infos font-medium leading-relaxed ${text.includes("@") ? "email break-normal" : "break-words"} ${
-          isSensitive && isCensored ? "blur-md select-none" : ""
-        }`}
-      >
-        {text}
+    <a href={itemLink}>
+      <div className={`info-section flex items-start mb-2 text-cv-dark-grey w-full ${textSize}`}>
+        <FontAwesomeIcon
+          icon={icon}
+          className="info-icon text-cv-primary mr-1.5 mt-1 flex-shrink-0"
+        />
+        <div
+          className={`text-infos font-medium leading-relaxed ${text.includes("@") ? "email break-normal" : "break-words"} ${
+            isSensitive && isCensored ? "blur-md select-none" : ""
+          }`}
+        >
+          {text}
+        </div>
       </div>
-    </div>
+    </a>
   );
 };
 

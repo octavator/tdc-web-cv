@@ -7,7 +7,7 @@ const Summary: React.FC = () => {
   const isCensored = useCensoredStore((state) => state.isCensored);
 
   return (
-    <div className="summary bg-gradient-to-r from-cv-primary to-cv-secondary text-white p-3 mb-2 rounded-xl">
+    <div className="summary text-white p-3 mb-2 rounded-xl">
       <h1
         className={`text-2xl font-bold mb-1 text-white tracking-tight ${isCensored ? "blur-md select-none" : ""}`}
       >

@@ -5,6 +5,7 @@ export interface WorkExperienceData {
   description: { french: string; english: string };
   positions?: Position[];
   singlePosition?: SinglePosition;
+  linkToSite?: string;
 }
 
 export interface Position {
@@ -104,6 +105,7 @@ export const workExperienceData: WorkExperienceData[] = [
         },
       },
     ],
+    linkToSite: "https://www.kbrw.com",
   },
   {
     companyName: "CoachLab, Co-founder & CTO",
@@ -118,6 +120,7 @@ export const workExperienceData: WorkExperienceData[] = [
       english:
         "SaaS coaching platform: video, scheduling, payments. Complete MVP",
     },
+    linkToSite: "https://www.theophile-decagny.fr/coachlab",
     // singlePosition: {
     //   title: {
     //     french: "Co-fondateur & CTO",
@@ -148,6 +151,7 @@ export const workExperienceData: WorkExperienceData[] = [
       english:
         "Digital transformation consulting & Solidarités International volunteering",
     },
+    linkToSite: "https://www.suricats-consulting.com/",
     // singlePosition: {
     //   title: {
     //     french: "Consultant Junior",

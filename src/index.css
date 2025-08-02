@@ -247,11 +247,6 @@ h3 {
     height: 180px !important;
   }
 
-  /* Summary section optimizations */
-  .summary {
-    border: 2px solid var(--primary-color) !important;
-  }
-
   .bg-white {
     border: 1px solid #e5e7eb !important;
   }
@@ -407,6 +402,8 @@ h3 {
 
 .summary {
   background-size: 200% 200%;
+  /* background: linear-gradient(90deg, var(--primary-color), var(--accent-color)); */
+  background: linear-gradient(25deg, var(--secondary-color) 0%, var(--primary-color) 50%, var(--accent-color) 85%);
   animation: gradientShift 8s ease infinite;
 }
 

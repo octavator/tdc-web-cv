@@ -1,18 +1,30 @@
 # Théophile de Cagny's Web Curriculum Vitae
 
-Welcome ! This CV is a fully operational website hosted on *TODO*.
+Welcome ! This CV is a fully operational website hosted on [my website](https://www.theophile-decagny.fr/).
 
 Keep in mind that the export to PDF functionality doesn't handle gradiants properly on Chrome. Prefer Firefox instead for exporting to PDF.
 
 Its main functionalities:
 
 - A CV, no surprise there. You can use your browser's print function to export it to PDF.
-- When printing to PDF, the different dynamic elements are hidden (button to switch language etc.) *TODO*
-- Change the language (EN / FR)
+- Handles multiple languages (EN / FR)
 - Switch to *No Discrimination* mode : blurs every information that could let one determine my identity (picture, name, github, linkedin, email etc.)
+- When printing to PDF, the different dynamic elements are hidden (button to switch language, no-discrimination toggle etc.)
+
 - Switch between targeted job offers: Architect, Developer *TODO*
 - Switch between sectors to adapt the content and layout: Normal, Positive Impact *TODO*
 
+## Deployment
+
+A solution to deploy a static site like this is to setup a simple nginx server. Basic configuration does the trick, and you can go a bit further to
+set up HTTPS, and even further to connect other websites to this one (like I did for [CoachLab](https://www.theophile-decagny.fr/coachlab/)).
+
+Once setup, all you have to do to deploy a new version is build it locally with `yarn build` and then send your files through `scp`
+to your remote VPS:
+
+`scp -r ./build/* <my_vps>>:/var/www/<my_app>` and link properly this folder with your nginx conf
+
+## Development
 To start the project in the development mode (hot-reload activated)
 ### `yarn start`
 
